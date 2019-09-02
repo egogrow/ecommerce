@@ -99,6 +99,20 @@
 				<div class="col">
 					
 					<div class="main_nav_content d-flex flex-row">
+<!-- <style>
+</style>					
+<div id="category">
+    <button type="button" class="close_btn"><i class="fa fa-times" aria-hidden="true"></i> 카테고리<span class="sound_only">닫기</span></button>
+
+    <div class="ct_wr">
+            <li class="cate_li_1">
+                <a href="#" class="cate_li_1_a"></a>
+                    <li class="cate_li_2">
+                        <a href="#"></a>
+                    </li>
+            </li>
+    </div>
+</div>		 -->			
 	
 						<!-- 카테고리 메뉴 -->
 						<div class="cat_menu_container">

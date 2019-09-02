@@ -9,6 +9,8 @@ import javax.annotation.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -47,9 +49,18 @@ public class ProductController {
 	
 	@Resource
 	ProductService productService;
-		
-//	@RequestMapping(value = "/", method = RequestMethod.GET)
-//	@GetMapping(value = "/")
+
+	/**
+	 * Method to Add Products to the Shopping Cart First Check if the Product is
+	 * available in the Wishlist, if available, remove the product from Wishlist
+	 * 
+	 * @author Sai Upadhyayula
+	 * 
+	 * @param ProductID
+	 * @param HttpServletRequest
+	 * @return Product Page View
+	 */
+	@RequestMapping(value = "/product.do", method = RequestMethod.GET)
 	public ModelAndView productList() throws Exception {
 		
 		System.out.println("productController call");

@@ -9,12 +9,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class MainController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(MainController.class);
+	private static final Logger log = LoggerFactory.getLogger(MainController.class);
+	
+//	@Resource
+//	CategoryService categoryService;
 		
 	@RequestMapping(value = "/", method = RequestMethod.GET)	
 	public String main() {
 		
 		System.out.println("mainController call");
+//		logger.info("@@@@@@");
+//	    $sql = " select ca_id, ca_name from {$g5['g5_shop_category_table']} where ca_use = '1' ";		
+//		category
 		
 		return "main/index";
 	}
