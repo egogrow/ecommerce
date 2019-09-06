@@ -4,7 +4,12 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/> <!-- Camel 표기법 -->
+    </settings>
+    
 	<typeAliases>
+		<typeAlias alias="categoryDTO" type="com.egogrow.commerce.dto.CategoryDTO"/> <!-- 별칭 -->
 	</typeAliases>
 
 </configuration>

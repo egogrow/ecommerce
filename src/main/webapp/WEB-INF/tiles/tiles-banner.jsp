@@ -20,7 +20,7 @@
 <aside>
 	<!-- 배너 (키 비쥬얼) -->
 	<div id="slider" class="carousel slide" data-ride="carousel">
-		<ol class="carousel-indicators">
+		<ol class="carousel-indicators" style="z-index:1">
 			<li data-target="#slider" data-slide-to="0" class="active"></li>
 			<li data-target="#slider" data-slide-to="1"></li>
 			<li data-target="#slider" data-slide-to="2"></li>

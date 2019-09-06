@@ -11,9 +11,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><tiles:getAsString name="title" /></title>
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/front-end/layout.css?v1"> <!-- 공용 -->
-	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/front-end/main_styles.css?v7"> <!-- 헤더 및 메인 -->
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/front-end/main_styles.css?v5"> <!-- 헤더 및 메인 -->
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/front-end/bootstrap4/bootstrap.min.css"> <!-- 부트스트랩 css -->
-	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/front-end/responsive.css?v2"> <!-- 모바일 css -->
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/front-end/responsive.css?v3"> <!-- 모바일 css -->
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/front-end/fontawesome-free-5.0.1/css/fontawesome-all.css"> <!-- 기호 css -->
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/front-end/OwlCarousel2-2.2.1/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/front-end/OwlCarousel2-2.2.1/owl.theme.default.css">
@@ -25,7 +25,7 @@
 	<script src="${pageContext.request.contextPath}/resources/css/front-end/bootstrap4/bootstrap.min.js"></script> <!-- 부트스트랩 -->
 	<script src="${pageContext.request.contextPath}/resources/plugins/front-end/greensock/TweenMax.min.js"></script> <!-- 모바일 메뉴 드롭&다운 -->
 	<script src="${pageContext.request.contextPath}/resources/plugins/front-end/greensock/TimelineMax.min.js"></script> <!-- 모바일 메뉴 드롭&다운 -->
-	<script src="${pageContext.request.contextPath}/resources/js/front-end/custom.js?v4"></script> <!-- 모바일 메뉴 드롭&다운 -->
+	<script src="${pageContext.request.contextPath}/resources/js/front-end/custom.js?v10"></script> <!-- 모바일 메뉴 드롭&다운 -->
 	<script src="${pageContext.request.contextPath}/resources/plugins/front-end/scrollmagic/ScrollMagic.min.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/plugins/front-end/greensock/animation.gsap.min.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/plugins/front-end/greensock/ScrollToPlugin.min.js"></script>

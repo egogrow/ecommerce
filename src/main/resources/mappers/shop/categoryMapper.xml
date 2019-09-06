@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+
+<mapper namespace="category">
+	<select id="listAll" resultType="categoryDTO">
+		SELECT CATEGORY_CODE, CATEGORY_NAME, CATEGORY_CODE_REF, CATEGORY_DEPTH FROM CATEGORY where CATEGORY_YN = 'Y' ORDER BY CATEGORY_CODE+0
+	</select>
+</mapper>
