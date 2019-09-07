@@ -1062,7 +1062,10 @@ $(document).ready(function()
 			$('#category').hide();
 		});
 		$('.category_li').hover(function() {
-			$(this).addClass("hassubs");
+			var classChk = $(this).children('ul').attr('class');
+			if (classChk != undefined) {
+				$(this).addClass("hassubs");
+			}
 			$(this).addClass("category_li_over");
 			categoryText($(this),true);
 		}, function() {
@@ -1072,7 +1075,10 @@ $(document).ready(function()
 		});
 
 		$('.division_li').hover(function() {
-			$(this).addClass("hassubs");
+			var classChk = $(this).children('ul').attr('class');
+			if (classChk != undefined) {
+				$(this).addClass("hassubs");
+			}			
 			$(this).addClass("division_li_over");
 			categoryText($(this),true);
 		}, function() {

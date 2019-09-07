@@ -181,28 +181,31 @@
 
 							<div id="category">
 								<ul class="category_ul">
-								<%-- ${fn:length(categoryList.category)} --%>								
 									<c:forEach var="category" items="${categoryList.category}">									
 										<li class="category_li category_li_height dot"><a href="#" class="category_text">${category.categoryName}<i class="fas fa-caret-right"></i></a>
-											<ul class="division_ul">																							
+											<c:if test="${not empty category.categoryCodeRefCount}">
+											<ul class="division_ul">
+											</c:if>
 												<c:forEach var="division" items="${categoryList.division}" varStatus="i">											
-												
 													<c:if test="${category.categoryCode eq division.categoryCodeRef}">
-													
-														<li class="division_li category_li_height dot"><a href="#" class="category_text">${division.categoryName}<i class="fas fa-caret-right"></i></a>
-															<ul class="section_ul">
-																<c:forEach var="section" items="${categoryList.section}">
-																	<c:if test="${division.categoryCode eq section.categoryCodeRef}">
-																		<li class="section_li category_li_height"><a href="" class="category_text">${section.categoryName}</a></li>
-																	</c:if>
-																</c:forEach>
-															</ul>							
-														</li>	
-																	
-																	
+													<li class="division_li category_li_height dot"><a href="#" class="category_text">${division.categoryName}<i class="fas fa-caret-right"></i></a>
+														<c:if test="${not empty division.categoryCodeRefCount}">
+														<ul class="section_ul">
+														</c:if>
+															<c:forEach var="section" items="${categoryList.section}">
+																<c:if test="${division.categoryCode eq section.categoryCodeRef}">
+																	<li class="section_li category_li_height"><a href="" class="category_text">${section.categoryName}</a></li>
+																</c:if>
+															</c:forEach>
+														<c:if test="${not empty division.categoryCodeRefCount}">	
+														</ul>
+														</c:if>						
+													</li>	
 													</c:if>
 												</c:forEach>
+											<c:if test="${not empty category.categoryCodeRefCount}">
 											</ul>
+											</c:if>
 										</li>				
 									</c:forEach>
 								</ul>

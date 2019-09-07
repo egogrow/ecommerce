@@ -25,7 +25,7 @@
 	<script src="${pageContext.request.contextPath}/resources/css/front-end/bootstrap4/bootstrap.min.js"></script> <!-- 부트스트랩 -->
 	<script src="${pageContext.request.contextPath}/resources/plugins/front-end/greensock/TweenMax.min.js"></script> <!-- 모바일 메뉴 드롭&다운 -->
 	<script src="${pageContext.request.contextPath}/resources/plugins/front-end/greensock/TimelineMax.min.js"></script> <!-- 모바일 메뉴 드롭&다운 -->
-	<script src="${pageContext.request.contextPath}/resources/js/front-end/custom.js?v10"></script> <!-- 모바일 메뉴 드롭&다운 -->
+	<script src="${pageContext.request.contextPath}/resources/js/front-end/custom.js?v11"></script> <!-- 모바일 메뉴 드롭&다운 -->
 	<script src="${pageContext.request.contextPath}/resources/plugins/front-end/scrollmagic/ScrollMagic.min.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/plugins/front-end/greensock/animation.gsap.min.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/plugins/front-end/greensock/ScrollToPlugin.min.js"></script>
