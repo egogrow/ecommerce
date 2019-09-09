@@ -1037,25 +1037,6 @@ $(document).ready(function()
 	
 	function initCatMenu() 
 	{
-//		$('.cat_menu li').hover(function() { 
-//			$(this).addClass("hassubs");
-//			var menuName = $(this).parent().attr('class').split(' ');
-//			switch (menuName[1]) {
-//				case 'category':
-//					$('.division_menu').show();
-//					$('.section_menu').hide();
-//					break;
-//				case 'division_menu':
-//					$('.section_menu').show();
-//					break;					
-//			}
-//		}, function() { 
-//			$(this).removeClass("hassubs");
-//		});
-//		$('.cat_menu_container').mouseleave(function(){
-//			$('.division_menu').hide();
-//			$('.section_menu').hide();
-//		});
 		$('.cat_menu_container').hover(function() {
 			$('#category').show();
 		}, function() {
@@ -1087,6 +1068,7 @@ $(document).ready(function()
 			$(this).removeClass("division_li_over");
 		});
 	}
+	
 	function categoryText(categoryObj, flag) {
 		if (flag) {
 			if ($(categoryObj).hasClass("hassubs") === true) {

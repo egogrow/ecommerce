@@ -8,40 +8,41 @@ public class CategoryDTO {
 	private Integer categoryDepth;
 	private Integer categoryCodeRefCount;
 	
-	public String getcategoryCode() {
+	public String getCategoryCode() {
 		return categoryCode;
 	}
-	public void setcategoryCode(String categoryCode) {
+	public void setCategoryCode(String categoryCode) {
 		this.categoryCode = categoryCode;
 	}
-	public String getcategoryName() {
+	public String getCategoryName() {
 		return categoryName;
 	}
-	public void setcategoryName(String categoryName) {
+	public void setCategoryName(String categoryName) {
 		this.categoryName = categoryName;
 	}
-	public String getcategoryCodeRef() {
+	public String getCategoryCodeRef() {
 		return categoryCodeRef;
 	}
-	public void setcategoryCodeRef(String categoryCodeRef) {
+	public void setCategoryCodeRef(String categoryCodeRef) {
 		this.categoryCodeRef = categoryCodeRef;
 	}
-	public Integer getcategoryDepth() {
+	public Integer getCategoryDepth() {
 		return categoryDepth;
 	}
-	public void setcategoryDepth(Integer categoryDepth) {
+	public void setCategoryDepth(Integer categoryDepth) {
 		this.categoryDepth = categoryDepth;
 	}
-	public Integer getcategoryCodeRefCount() {
+	public Integer getCategoryCodeRefCount() {
 		return categoryCodeRefCount;
 	}
-	public void setcategoryCodeRefCount(Integer categoryCodeRefCount) {
+	public void setCategoryCodeRefCount(Integer categoryCodeRefCount) {
 		this.categoryCodeRefCount = categoryCodeRefCount;
 	}
 	@Override
 	public String toString() {
 		return "CategoryDTO [categoryCode=" + categoryCode + ", categoryName=" + categoryName + ", categoryCodeRef="
-				+ categoryCodeRef + ", categoryDepth=" + categoryDepth + ", categoryCodeRefCount=" + categoryCodeRefCount + "]";
+				+ categoryCodeRef + ", categoryDepth=" + categoryDepth + ", categoryCodeRefCount="
+				+ categoryCodeRefCount + "]";
 	}
 
 }

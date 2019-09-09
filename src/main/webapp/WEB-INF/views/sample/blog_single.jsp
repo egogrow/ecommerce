@@ -8,13 +8,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="OneTech shop project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/front-end/bootstrap4/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/front-end/fontawesome-free-5.0.1/css/fontawesome-all.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/front-end/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/front-end/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/front-end/OwlCarousel2-2.2.1/animate.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/front-end/blog_single_styles.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/front-end/blog_single_responsive.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/bootstrap4/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/fontawesome-free-5.0.1/css/fontawesome-all.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/blog_single_styles.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/blog_single_responsive.css">
 
 </head>
 
@@ -32,8 +32,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col d-flex flex-row">
-						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="${pageContext.request.contextPath}/resources/images/front-end/phone.png" alt=""></div>+38 068 005 3570</div>
-						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="${pageContext.request.contextPath}/resources/images/front-end/mail.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a></div>
+						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/phone.png" alt=""></div>+38 068 005 3570</div>
+						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/mail.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a></div>
 						<div class="top_bar_content ml-auto">
 							<div class="top_bar_menu">
 								<ul class="standard_dropdown top_bar_dropdown">
@@ -56,7 +56,7 @@
 								</ul>
 							</div>
 							<div class="top_bar_user">
-								<div class="user_icon"><img src="${pageContext.request.contextPath}/resources/images/front-end/user.svg" alt=""></div>
+								<div class="user_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/user.svg" alt=""></div>
 								<div><a href="#">Register</a></div>
 								<div><a href="#">Sign in</a></div>
 							</div>
@@ -100,7 +100,7 @@
 												</ul>
 											</div>
 										</div>
-										<button type="submit" class="header_search_button trans_300" value="Submit"><img src="${pageContext.request.contextPath}/resources/images/front-end/search.png" alt=""></button>
+										<button type="submit" class="header_search_button trans_300" value="Submit"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/search.png" alt=""></button>
 									</form>
 								</div>
 							</div>
@@ -111,7 +111,7 @@
 					<div class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right">
 						<div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
 							<div class="wishlist d-flex flex-row align-items-center justify-content-end">
-								<div class="wishlist_icon"><img src="${pageContext.request.contextPath}/resources/images/front-end/heart.png" alt=""></div>
+								<div class="wishlist_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/heart.png" alt=""></div>
 								<div class="wishlist_content">
 									<div class="wishlist_text"><a href="#">Wishlist</a></div>
 									<div class="wishlist_count">115</div>
@@ -122,7 +122,7 @@
 							<div class="cart">
 								<div class="cart_container d-flex flex-row align-items-center justify-content-end">
 									<div class="cart_icon">
-										<img src="${pageContext.request.contextPath}/resources/images/front-end/cart.png" alt="">
+										<img src="${PATH+=FRONTPAGE_DIR_IMAGES}/cart.png" alt="">
 										<div class="cart_count"><span>10</span></div>
 									</div>
 									<div class="cart_content">
@@ -331,8 +331,8 @@
 							</ul>
 							
 							<div class="menu_contact">
-								<div class="menu_contact_item"><div class="menu_contact_icon"><img src="${pageContext.request.contextPath}/resources/images/phone_white.png" alt=""></div>+38 068 005 3570</div>
-								<div class="menu_contact_item"><div class="menu_contact_icon"><img src="${pageContext.request.contextPath}/resources/images/mail_white.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a></div>
+								<div class="menu_contact_item"><div class="menu_contact_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/phone_white.png" alt=""></div>+38 068 005 3570</div>
+								<div class="menu_contact_item"><div class="menu_contact_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/mail_white.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a></div>
 							</div>
 						</div>
 					</div>
@@ -345,7 +345,7 @@
 	<!-- Home -->
 
 	<div class="home">
-		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="${pageContext.request.contextPath}/resources/images/blog_single_background.jpg" data-speed="0.8"></div>
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="${PATH+=FRONTPAGE_DIR_IMAGES}/blog_single_background.jpg" data-speed="0.8"></div>
 	</div>
 
 	<!-- Single Blog Post -->
@@ -359,7 +359,7 @@
 						<p>Mauris viverra cursus ante laoreet eleifend. Donec vel fringilla ante. Aenean finibus velit id urna vehicula, nec maximus est sollicitudin. Praesent at tempus lectus, eleifend blandit felis. Fusce augue arcu, consequat a nisl aliquet, consectetur elementum turpis. Donec iaculis lobortis nisl, et viverra risus imperdiet eu. Etiam mollis posuere elit non sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis arcu a magna sodales venenatis. Integer non diam sit amet magna luctus mollis ac eu nisi. In accumsan tellus ut dapibus blandit.</p>
 
 						<div class="single_post_quote text-center">
-							<div class="quote_image"><img src="${pageContext.request.contextPath}/resources/images/quote.png" alt=""></div>
+							<div class="quote_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/quote.png" alt=""></div>
 							<div class="quote_text">Quisque sagittis non ex eget vestibulum. Sed nec ultrices dui. Cras et sagittis erat. Maecenas pulvinar, turpis in dictum tincidunt, dolor nibh lacinia lacus.</div>
 							<div class="quote_name">Liam Neeson</div>
 						</div>
@@ -381,21 +381,21 @@
 
 						<!-- Blog post -->
 						<div class="blog_post">
-							<div class="blog_image" style="background-image:url(${pageContext.request.contextPath}/resources/images/blog_4.jpg)"></div>
+							<div class="blog_image" style="background-image:url(${PATH+=FRONTPAGE_DIR_IMAGES}/blog_4.jpg)"></div>
 							<div class="blog_text">Etiam leo nibh, consectetur nec orci et, tempus tempus ex</div>
 							<div class="blog_button"><a href="blog_single.html">Continue Reading</a></div>
 						</div>
 
 						<!-- Blog post -->
 						<div class="blog_post">
-							<div class="blog_image" style="background-image:url(${pageContext.request.contextPath}/resources/images/blog_5.jpg)"></div>
+							<div class="blog_image" style="background-image:url(${PATH+=FRONTPAGE_DIR_IMAGES}/blog_5.jpg)"></div>
 							<div class="blog_text">Sed viverra pellentesque dictum. Aenean ligula justo, viverra in lacus porttitor</div>
 							<div class="blog_button"><a href="blog_single.html">Continue Reading</a></div>
 						</div>
 
 						<!-- Blog post -->
 						<div class="blog_post">
-							<div class="blog_image" style="background-image:url(${pageContext.request.contextPath}/resources/images/blog_6.jpg)"></div>
+							<div class="blog_image" style="background-image:url(${PATH+=FRONTPAGE_DIR_IMAGES}/blog_6.jpg)"></div>
 							<div class="blog_text">In nisl tortor, tempus nec ex vitae, bibendum rutrum mi. Integer tempus nisi</div>
 							<div class="blog_button"><a href="blog_single.html">Continue Reading</a></div>
 						</div>
@@ -414,7 +414,7 @@
 				<div class="col">
 					<div class="newsletter_container d-flex flex-lg-row flex-column align-items-lg-center align-items-center justify-content-lg-start justify-content-center">
 						<div class="newsletter_title_container">
-							<div class="newsletter_icon"><img src="${pageContext.request.contextPath}/resources/images/send.png" alt=""></div>
+							<div class="newsletter_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/send.png" alt=""></div>
 							<div class="newsletter_title">Sign up for Newsletter</div>
 							<div class="newsletter_text"><p>...and receive %20 coupon for first shopping.</p></div>
 						</div>
@@ -522,10 +522,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </div>
 						<div class="logos ml-sm-auto">
 							<ul class="logos_list">
-								<li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/logos_1.png" alt=""></a></li>
-								<li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/logos_2.png" alt=""></a></li>
-								<li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/logos_3.png" alt=""></a></li>
-								<li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/logos_4.png" alt=""></a></li>
+								<li><a href="#"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/logos_1.png" alt=""></a></li>
+								<li><a href="#"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/logos_2.png" alt=""></a></li>
+								<li><a href="#"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/logos_3.png" alt=""></a></li>
+								<li><a href="#"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/logos_4.png" alt=""></a></li>
 							</ul>
 						</div>
 					</div>
@@ -535,18 +535,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</div>
 </div>
 
-<script src="${pageContext.request.contextPath}/resources/js/front-end/jquery-3.3.1.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/css/front-end/bootstrap4/popper.js"></script>
-<script src="${pageContext.request.contextPath}/resources/css/front-end/bootstrap4/bootstrap.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/plugins/front-end/greensock/TweenMax.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/plugins/front-end/greensock/TimelineMax.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/plugins/front-end/scrollmagic/ScrollMagic.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/plugins/front-end/greensock/animation.gsap.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/plugins/front-end/greensock/ScrollToPlugin.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/plugins/front-end/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="${pageContext.request.contextPath}/resources/plugins/front-end/parallax-js-master/parallax.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/plugins/front-end/easing/easing.js"></script>
-<script src="${pageContext.request.contextPath}/resources/js/front-end/blog_single_custom.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/jquery-3.3.1.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/css/bootstrap4/popper.js"></script>
+<script src="${pageContext.request.contextPath}/resources/css/bootstrap4/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/plugins/greensock/TweenMax.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/plugins/greensock/TimelineMax.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/plugins/greensock/animation.gsap.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="${pageContext.request.contextPath}/resources/plugins/parallax-js-master/parallax.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/plugins/easing/easing.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/blog_single_custom.js"></script>
 </body>
 
 </html>

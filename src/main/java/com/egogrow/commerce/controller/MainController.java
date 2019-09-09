@@ -25,7 +25,8 @@ public class MainController {
 		ModelAndView mv = new ModelAndView("main/index");
 		Map<String,List<CategoryDTO>> categoryList = categoryService.categoryList();
 //		System.out.println(categoryList);
-		mv.addObject("categoryList",categoryList);		
+		mv.addObject("categoryList",categoryList);
+//		mv.att
 //		Map<String,Object> map = new HashMap<>();
 //		map.put("list",list);
 //		mv.addObject("map",map);		
@@ -44,7 +45,7 @@ public class MainController {
 	}
 	
     /**
-     * ´ë¸®Á¡ ¸ñ·Ï Á¶È¸
+     * ï¿½ë¸®ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½È¸
      * 
      * @param vo
      * @return

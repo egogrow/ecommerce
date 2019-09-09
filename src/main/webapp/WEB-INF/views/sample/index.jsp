@@ -8,15 +8,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="OneTech shop project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/front-end/layout.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/front-end/main_styles.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/front-end/bootstrap4/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/front-end/responsive.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/front-end/fontawesome-free-5.0.1/css/fontawesome-all.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/front-end/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/front-end/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/front-end/OwlCarousel2-2.2.1/animate.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/front-end/slick-1.8.0/slick.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/layout.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/main_styles.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/bootstrap4/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/responsive.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/fontawesome-free-5.0.1/css/fontawesome-all.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/slick-1.8.0/slick.css">
 
 
 </head>
@@ -35,8 +35,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col d-flex flex-row">
-						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="${pageContext.request.contextPath}/resources/images/front-end/phone.png" alt=""></div>+38 068 005 3570</div>
-						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="${pageContext.request.contextPath}/resources/images/front-end/mail.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a></div>
+						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/phone.png" alt=""></div>+38 068 005 3570</div>
+						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/mail.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a></div>
 						<div class="top_bar_content ml-auto">
 							<div class="top_bar_menu">
 								<ul class="standard_dropdown top_bar_dropdown">
@@ -59,7 +59,7 @@
 								</ul>
 							</div>
 							<div class="top_bar_user">
-								<div class="user_icon"><img src="${pageContext.request.contextPath}/resources/images/front-end/user.svg" alt=""></div>
+								<div class="user_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/user.svg" alt=""></div>
 								<div><a href="#">Register</a></div>
 								<div><a href="#">Sign in</a></div>
 							</div>
@@ -103,7 +103,7 @@
 												</ul>
 											</div>
 										</div>
-										<button type="submit" class="header_search_button trans_300" value="Submit"><img src="${pageContext.request.contextPath}/resources/images/front-end/search.png" alt=""></button>
+										<button type="submit" class="header_search_button trans_300" value="Submit"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/search.png" alt=""></button>
 									</form>
 								</div>
 							</div>
@@ -114,7 +114,7 @@
 					<div class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right">
 						<div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
 							<div class="wishlist d-flex flex-row align-items-center justify-content-end">
-								<div class="wishlist_icon"><img src="${pageContext.request.contextPath}/resources/images/front-end/heart.png" alt=""></div>
+								<div class="wishlist_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/heart.png" alt=""></div>
 								<div class="wishlist_content">
 									<div class="wishlist_text"><a href="#">Wishlist</a></div>
 									<div class="wishlist_count">115</div>
@@ -125,7 +125,7 @@
 							<div class="cart">
 								<div class="cart_container d-flex flex-row align-items-center justify-content-end">
 									<div class="cart_icon">
-										<img src="${pageContext.request.contextPath}/resources/images/front-end/cart.png" alt="">
+										<img src="${PATH+=FRONTPAGE_DIR_IMAGES}/cart.png" alt="">
 										<div class="cart_count"><span>10</span></div>
 									</div>
 									<div class="cart_content">
@@ -334,8 +334,8 @@
 							</ul>
 							
 							<div class="menu_contact">
-								<div class="menu_contact_item"><div class="menu_contact_icon"><img src="${pageContext.request.contextPath}/resources/images/front-end/phone_white.png" alt=""></div>+38 068 005 3570</div>
-								<div class="menu_contact_item"><div class="menu_contact_icon"><img src="${pageContext.request.contextPath}/resources/images/front-end/mail_white.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a></div>
+								<div class="menu_contact_item"><div class="menu_contact_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/phone_white.png" alt=""></div>+38 068 005 3570</div>
+								<div class="menu_contact_item"><div class="menu_contact_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/mail_white.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a></div>
 							</div>
 						</div>
 					</div>
@@ -348,10 +348,10 @@
 	<!-- Banner -->
 
 	<div class="banner">
-		<div class="banner_background" style="background-image:url(${pageContext.request.contextPath}/resources/images/front-end/banner_background.jpg)"></div>
+		<div class="banner_background" style="background-image:url(${PATH+=FRONTPAGE_DIR_IMAGES}/banner_background.jpg)"></div>
 		<div class="container fill_height">
 			<div class="row fill_height">
-				<div class="banner_product_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/banner_product.png" alt=""></div>
+				<div class="banner_product_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/banner_product.png" alt=""></div>
 				<div class="col-lg-5 offset-lg-4 fill_height">
 					<div class="banner_content">
 						<h1 class="banner_text">new era of smartphones</h1>
@@ -374,7 +374,7 @@
 				<div class="col-lg-3 col-md-6 char_col">
 					
 					<div class="char_item d-flex flex-row align-items-center justify-content-start">
-						<div class="char_icon"><img src="${pageContext.request.contextPath}/resources/images/front-end/char_1.png" alt=""></div>
+						<div class="char_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/char_1.png" alt=""></div>
 						<div class="char_content">
 							<div class="char_title">Free Delivery</div>
 							<div class="char_subtitle">from $50</div>
@@ -386,7 +386,7 @@
 				<div class="col-lg-3 col-md-6 char_col">
 					
 					<div class="char_item d-flex flex-row align-items-center justify-content-start">
-						<div class="char_icon"><img src="${pageContext.request.contextPath}/resources/images/front-end/char_2.png" alt=""></div>
+						<div class="char_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/char_2.png" alt=""></div>
 						<div class="char_content">
 							<div class="char_title">Free Delivery</div>
 							<div class="char_subtitle">from $50</div>
@@ -398,7 +398,7 @@
 				<div class="col-lg-3 col-md-6 char_col">
 					
 					<div class="char_item d-flex flex-row align-items-center justify-content-start">
-						<div class="char_icon"><img src="${pageContext.request.contextPath}/resources/images/front-end/char_3.png" alt=""></div>
+						<div class="char_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/char_3.png" alt=""></div>
 						<div class="char_content">
 							<div class="char_title">Free Delivery</div>
 							<div class="char_subtitle">from $50</div>
@@ -410,7 +410,7 @@
 				<div class="col-lg-3 col-md-6 char_col">
 					
 					<div class="char_item d-flex flex-row align-items-center justify-content-start">
-						<div class="char_icon"><img src="${pageContext.request.contextPath}/resources/images/front-end/char_4.png" alt=""></div>
+						<div class="char_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/char_4.png" alt=""></div>
 						<div class="char_content">
 							<div class="char_title">Free Delivery</div>
 							<div class="char_subtitle">from $50</div>
@@ -439,7 +439,7 @@
 								
 								<!-- Deals Item -->
 								<div class="owl-item deals_item">
-									<div class="deals_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/deals.png" alt=""></div>
+									<div class="deals_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/deals.png" alt=""></div>
 									<div class="deals_content">
 										<div class="deals_info_line d-flex flex-row justify-content-start">
 											<div class="deals_item_category"><a href="#">Headphones</a></div>
@@ -483,7 +483,7 @@
 
 								<!-- Deals Item -->
 								<div class="owl-item deals_item">
-									<div class="deals_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/deals.png" alt=""></div>
+									<div class="deals_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/deals.png" alt=""></div>
 									<div class="deals_content">
 										<div class="deals_info_line d-flex flex-row justify-content-start">
 											<div class="deals_item_category"><a href="#">Headphones</a></div>
@@ -527,7 +527,7 @@
 
 								<!-- Deals Item -->
 								<div class="owl-item deals_item">
-									<div class="deals_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/deals.png" alt=""></div>
+									<div class="deals_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/deals.png" alt=""></div>
 									<div class="deals_content">
 										<div class="deals_info_line d-flex flex-row justify-content-start">
 											<div class="deals_item_category"><a href="#">Headphones</a></div>
@@ -599,7 +599,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_1.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_1.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price discount">$225<span>$300</span></div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -624,7 +624,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_2.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_2.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Apple iPod shuffle</a></div></div>
@@ -649,7 +649,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_3.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_3.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Sony MDRZX310W</a></div></div>
@@ -674,7 +674,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_4.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_4.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price discount">$225<span>$300</span></div>
 												<div class="product_name"><div><a href="product.html">LUNA Smartphone</a></div></div>
@@ -699,7 +699,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_5.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_5.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$225</div>
 												<div class="product_name"><div><a href="product.html">Canon STM Kit...</a></div></div>
@@ -724,7 +724,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_6.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_6.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Samsung J330F...</a></div></div>
@@ -749,7 +749,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_7.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_7.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Lenovo IdeaPad</a></div></div>
@@ -774,7 +774,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_8.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_8.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$225</div>
 												<div class="product_name"><div><a href="product.html">Digitus EDNET...</a></div></div>
@@ -799,7 +799,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_1.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_1.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$225</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -824,7 +824,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_2.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_2.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -849,7 +849,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_3.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_3.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -874,7 +874,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_4.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_4.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$225</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -899,7 +899,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_5.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_5.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$225</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -924,7 +924,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_6.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_6.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -949,7 +949,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_7.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_7.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -974,7 +974,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_8.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_8.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$225</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -1008,7 +1008,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_1.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_1.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price discount">$225<span>$300</span></div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -1033,7 +1033,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_2.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_2.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Apple iPod shuffle</a></div></div>
@@ -1058,7 +1058,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_3.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_3.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Sony MDRZX310W</a></div></div>
@@ -1083,7 +1083,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_4.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_4.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price discount">$225<span>$300</span></div>
 												<div class="product_name"><div><a href="product.html">LUNA Smartphone</a></div></div>
@@ -1108,7 +1108,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_5.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_5.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$225</div>
 												<div class="product_name"><div><a href="product.html">Canon STM Kit...</a></div></div>
@@ -1133,7 +1133,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_6.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_6.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Samsung J330F...</a></div></div>
@@ -1158,7 +1158,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_7.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_7.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Lenovo IdeaPad</a></div></div>
@@ -1183,7 +1183,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_8.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_8.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$225</div>
 												<div class="product_name"><div><a href="product.html">Digitus EDNET...</a></div></div>
@@ -1208,7 +1208,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_1.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_1.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$225</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -1233,7 +1233,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_2.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_2.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -1258,7 +1258,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_3.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_3.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -1283,7 +1283,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_4.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_4.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$225</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -1308,7 +1308,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_5.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_5.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$225</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -1333,7 +1333,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_6.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_6.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -1358,7 +1358,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_7.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_7.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -1383,7 +1383,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_8.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_8.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$225</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -1417,7 +1417,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_1.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_1.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price discount">$225<span>$300</span></div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -1442,7 +1442,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_2.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_2.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Apple iPod shuffle</a></div></div>
@@ -1467,7 +1467,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_3.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_3.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Sony MDRZX310W</a></div></div>
@@ -1492,7 +1492,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_4.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_4.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price discount">$225<span>$300</span></div>
 												<div class="product_name"><div><a href="product.html">LUNA Smartphone</a></div></div>
@@ -1517,7 +1517,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_5.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_5.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$225</div>
 												<div class="product_name"><div><a href="product.html">Canon STM Kit...</a></div></div>
@@ -1542,7 +1542,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_6.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_6.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Samsung J330F...</a></div></div>
@@ -1567,7 +1567,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_7.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_7.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Lenovo IdeaPad</a></div></div>
@@ -1592,7 +1592,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_8.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_8.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$225</div>
 												<div class="product_name"><div><a href="product.html">Digitus EDNET...</a></div></div>
@@ -1617,7 +1617,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_1.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_1.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$225</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -1642,7 +1642,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_2.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_2.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -1667,7 +1667,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_3.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_3.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -1692,7 +1692,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_4.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_4.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$225</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -1717,7 +1717,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_5.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_5.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$225</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -1742,7 +1742,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_6.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_6.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -1767,7 +1767,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_7.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_7.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$379</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -1792,7 +1792,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/featured_8.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/featured_8.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">$225</div>
 												<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -1850,7 +1850,7 @@
 							<!-- Popular Categories Item -->
 							<div class="owl-item">
 								<div class="popular_category d-flex flex-column align-items-center justify-content-center">
-									<div class="popular_category_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/popular_1.png" alt=""></div>
+									<div class="popular_category_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/popular_1.png" alt=""></div>
 									<div class="popular_category_text">Smartphones & Tablets</div>
 								</div>
 							</div>
@@ -1858,7 +1858,7 @@
 							<!-- Popular Categories Item -->
 							<div class="owl-item">
 								<div class="popular_category d-flex flex-column align-items-center justify-content-center">
-									<div class="popular_category_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/popular_2.png" alt=""></div>
+									<div class="popular_category_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/popular_2.png" alt=""></div>
 									<div class="popular_category_text">Computers & Laptops</div>
 								</div>
 							</div>
@@ -1866,7 +1866,7 @@
 							<!-- Popular Categories Item -->
 							<div class="owl-item">
 								<div class="popular_category d-flex flex-column align-items-center justify-content-center">
-									<div class="popular_category_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/popular_3.png" alt=""></div>
+									<div class="popular_category_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/popular_3.png" alt=""></div>
 									<div class="popular_category_text">Gadgets</div>
 								</div>
 							</div>
@@ -1874,7 +1874,7 @@
 							<!-- Popular Categories Item -->
 							<div class="owl-item">
 								<div class="popular_category d-flex flex-column align-items-center justify-content-center">
-									<div class="popular_category_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/popular_4.png" alt=""></div>
+									<div class="popular_category_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/popular_4.png" alt=""></div>
 									<div class="popular_category_text">Video Games & Consoles</div>
 								</div>
 							</div>
@@ -1882,7 +1882,7 @@
 							<!-- Popular Categories Item -->
 							<div class="owl-item">
 								<div class="popular_category d-flex flex-column align-items-center justify-content-center">
-									<div class="popular_category_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/popular_5.png" alt=""></div>
+									<div class="popular_category_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/popular_5.png" alt=""></div>
 									<div class="popular_category_text">Accessories</div>
 								</div>
 							</div>
@@ -1897,7 +1897,7 @@
 	<!-- Banner -->
 
 	<div class="banner_2">
-		<div class="banner_2_background" style="background-image:url(${pageContext.request.contextPath}/resources/images/front-end/banner_2_background.jpg)"></div>
+		<div class="banner_2_background" style="background-image:url(${PATH+=FRONTPAGE_DIR_IMAGES}/banner_2_background.jpg)"></div>
 		<div class="banner_2_container">
 			<div class="banner_2_dots"></div>
 			<!-- Banner 2 Slider -->
@@ -1921,7 +1921,7 @@
 								</div>
 								<div class="col-lg-8 col-md-6 fill_height">
 									<div class="banner_2_image_container">
-										<div class="banner_2_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/banner_2_product.png" alt=""></div>
+										<div class="banner_2_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/banner_2_product.png" alt=""></div>
 									</div>
 								</div>
 							</div>
@@ -1946,7 +1946,7 @@
 								</div>
 								<div class="col-lg-8 col-md-6 fill_height">
 									<div class="banner_2_image_container">
-										<div class="banner_2_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/banner_2_product.png" alt=""></div>
+										<div class="banner_2_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/banner_2_product.png" alt=""></div>
 									</div>
 								</div>
 							</div>
@@ -1971,7 +1971,7 @@
 								</div>
 								<div class="col-lg-8 col-md-6 fill_height">
 									<div class="banner_2_image_container">
-										<div class="banner_2_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/banner_2_product.png" alt=""></div>
+										<div class="banner_2_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/banner_2_product.png" alt=""></div>
 									</div>
 								</div>
 							</div>
@@ -2010,7 +2010,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_1.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_1.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Astro M2 Black</a></div></div>
@@ -2035,7 +2035,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_2.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_2.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Transcend T.Sonic</a></div></div>
@@ -2060,7 +2060,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_3.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_3.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Xiaomi Band 2...</a></div></div>
@@ -2085,7 +2085,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_4.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_4.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Rapoo T8 White</a></div></div>
@@ -2110,7 +2110,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_5.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_5.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Philips BT6900A</a></div></div>
@@ -2135,7 +2135,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_6.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_6.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Nokia 3310(2017)...</a></div></div>
@@ -2160,7 +2160,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_7.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_7.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Rapoo 7100p Gray</a></div></div>
@@ -2185,7 +2185,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_8.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_8.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Canon EF</a></div></div>
@@ -2210,7 +2210,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_1.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_1.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Gembird SPK-103</a></div></div>
@@ -2235,7 +2235,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_2.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_2.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Canon IXUS 175...</a></div></div>
@@ -2260,7 +2260,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_3.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_3.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2285,7 +2285,7 @@
 										<div class="arrivals_slider_item">
 										<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_4.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_4.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2310,7 +2310,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_5.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_5.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2335,7 +2335,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_6.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_6.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2360,7 +2360,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_7.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_7.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2385,7 +2385,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_8.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_8.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2417,7 +2417,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_1.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_1.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2442,7 +2442,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_2.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_2.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2467,7 +2467,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_3.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_3.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2492,7 +2492,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_4.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_4.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2517,7 +2517,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_5.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_5.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2542,7 +2542,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_6.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_6.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2567,7 +2567,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_7.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_7.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2592,7 +2592,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_8.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_8.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2617,7 +2617,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_1.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_1.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2642,7 +2642,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_2.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_2.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2667,7 +2667,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_3.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_3.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2692,7 +2692,7 @@
 										<div class="arrivals_slider_item">
 										<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_4.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_4.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2717,7 +2717,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_5.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_5.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2742,7 +2742,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_6.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_6.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2767,7 +2767,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_7.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_7.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2792,7 +2792,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_8.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_8.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2824,7 +2824,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_1.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_1.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2849,7 +2849,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_2.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_2.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2874,7 +2874,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_3.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_3.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2899,7 +2899,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_4.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_4.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2924,7 +2924,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_5.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_5.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2949,7 +2949,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_6.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_6.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2974,7 +2974,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_7.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_7.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -2999,7 +2999,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_8.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_8.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -3024,7 +3024,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_1.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_1.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -3049,7 +3049,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_2.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_2.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -3074,7 +3074,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_3.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_3.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -3099,7 +3099,7 @@
 										<div class="arrivals_slider_item">
 										<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_4.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_4.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -3124,7 +3124,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_5.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_5.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -3149,7 +3149,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_6.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_6.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -3174,7 +3174,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_7.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_7.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$379</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -3199,7 +3199,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_8.jpg" alt=""></div>
+												<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_8.jpg" alt=""></div>
 												<div class="product_content">
 													<div class="product_price">$225</div>
 													<div class="product_name"><div><a href="product.html">Huawei MediaPad...</a></div></div>
@@ -3228,7 +3228,7 @@
 							<div class="col-lg-3">
 								<div class="arrivals_single clearfix">
 									<div class="d-flex flex-column align-items-center justify-content-center">
-										<div class="arrivals_single_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/new_single.png" alt=""></div>
+										<div class="arrivals_single_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/new_single.png" alt=""></div>
 										<div class="arrivals_single_content">
 											<div class="arrivals_single_category"><a href="#">Smartphones</a></div>
 											<div class="arrivals_single_name_container clearfix">
@@ -3280,7 +3280,7 @@
 								<!-- Best Sellers Item -->
 								<div class="bestsellers_item discount">
 									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_1.png" alt=""></div>
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_1.png" alt=""></div>
 										<div class="bestsellers_content">
 											<div class="bestsellers_category"><a href="#">Headphones</a></div>
 											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
@@ -3298,7 +3298,7 @@
 								<!-- Best Sellers Item -->
 								<div class="bestsellers_item discount">
 									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_2.png" alt=""></div>
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_2.png" alt=""></div>
 										<div class="bestsellers_content">
 											<div class="bestsellers_category"><a href="#">Headphones</a></div>
 											<div class="bestsellers_name"><a href="product.html">Samsung J730F...</a></div>
@@ -3316,7 +3316,7 @@
 								<!-- Best Sellers Item -->
 								<div class="bestsellers_item">
 									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_3.png" alt=""></div>
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_3.png" alt=""></div>
 										<div class="bestsellers_content">
 											<div class="bestsellers_category"><a href="#">Headphones</a></div>
 											<div class="bestsellers_name"><a href="product.html">Nomi Black White</a></div>
@@ -3334,7 +3334,7 @@
 								<!-- Best Sellers Item -->
 								<div class="bestsellers_item">
 									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_4.png" alt=""></div>
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_4.png" alt=""></div>
 										<div class="bestsellers_content">
 											<div class="bestsellers_category"><a href="#">Headphones</a></div>
 											<div class="bestsellers_name"><a href="product.html">Samsung Charm Gold</a></div>
@@ -3352,7 +3352,7 @@
 								<!-- Best Sellers Item -->
 								<div class="bestsellers_item discount">
 									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_5.png" alt=""></div>
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_5.png" alt=""></div>
 										<div class="bestsellers_content">
 											<div class="bestsellers_category"><a href="#">Headphones</a></div>
 											<div class="bestsellers_name"><a href="product.html">Beoplay H7</a></div>
@@ -3370,7 +3370,7 @@
 								<!-- Best Sellers Item -->
 								<div class="bestsellers_item">
 									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_6.png" alt=""></div>
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_6.png" alt=""></div>
 										<div class="bestsellers_content">
 											<div class="bestsellers_category"><a href="#">Headphones</a></div>
 											<div class="bestsellers_name"><a href="product.html">Huawei MediaPad T3</a></div>
@@ -3388,7 +3388,7 @@
 								<!-- Best Sellers Item -->
 								<div class="bestsellers_item discount">
 									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_1.png" alt=""></div>
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_1.png" alt=""></div>
 										<div class="bestsellers_content">
 											<div class="bestsellers_category"><a href="#">Headphones</a></div>
 											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
@@ -3406,7 +3406,7 @@
 								<!-- Best Sellers Item -->
 								<div class="bestsellers_item discount">
 									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_2.png" alt=""></div>
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_2.png" alt=""></div>
 										<div class="bestsellers_content">
 											<div class="bestsellers_category"><a href="#">Headphones</a></div>
 											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
@@ -3424,7 +3424,7 @@
 								<!-- Best Sellers Item -->
 								<div class="bestsellers_item">
 									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_3.png" alt=""></div>
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_3.png" alt=""></div>
 										<div class="bestsellers_content">
 											<div class="bestsellers_category"><a href="#">Headphones</a></div>
 											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
@@ -3442,124 +3442,7 @@
 								<!-- Best Sellers Item -->
 								<div class="bestsellers_item">
 									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_4.png" alt=""></div>
-										<div class="bestsellers_content">
-											<div class="bestsellers_category"><a href="#">Headphones</a></div>
-											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
-											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
-											<div class="bestsellers_price discount">$225<span>$300</span></div>
-										</div>
-									</div>
-									<div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
-									<ul class="bestsellers_marks">
-										<li class="bestsellers_mark bestsellers_discount">-25%</li>
-										<li class="bestsellers_mark bestsellers_new">new</li>
-									</ul>
-								</div>
-
-								<!-- Best Sellers Item -->
-								<div class="bestsellers_item discount">
-									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_5.png" alt=""></div>
-										<div class="bestsellers_content">
-											<div class="bestsellers_category"><a href="#">Headphones</a></div>
-											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
-											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
-											<div class="bestsellers_price discount">$225<span>$300</span></div>
-										</div>
-									</div>
-									<div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
-									<ul class="bestsellers_marks">
-										<li class="bestsellers_mark bestsellers_discount">-25%</li>
-										<li class="bestsellers_mark bestsellers_new">new</li>
-									</ul>
-								</div>
-
-								<!-- Best Sellers Item -->
-								<div class="bestsellers_item">
-									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_6.png" alt=""></div>
-										<div class="bestsellers_content">
-											<div class="bestsellers_category"><a href="#">Headphones</a></div>
-											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
-											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
-											<div class="bestsellers_price discount">$225<span>$300</span></div>
-										</div>
-									</div>
-									<div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
-									<ul class="bestsellers_marks">
-										<li class="bestsellers_mark bestsellers_discount">-25%</li>
-										<li class="bestsellers_mark bestsellers_new">new</li>
-									</ul>
-								</div>
-
-							</div>
-						</div>
-
-						<div class="bestsellers_panel panel">
-
-							<!-- Best Sellers Slider -->
-
-							<div class="bestsellers_slider slider">
-
-								<!-- Best Sellers Item -->
-								<div class="bestsellers_item discount">
-									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_1.png" alt=""></div>
-										<div class="bestsellers_content">
-											<div class="bestsellers_category"><a href="#">Headphones</a></div>
-											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
-											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
-											<div class="bestsellers_price discount">$225<span>$300</span></div>
-										</div>
-									</div>
-									<div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
-									<ul class="bestsellers_marks">
-										<li class="bestsellers_mark bestsellers_discount">-25%</li>
-										<li class="bestsellers_mark bestsellers_new">new</li>
-									</ul>
-								</div>
-
-								<!-- Best Sellers Item -->
-								<div class="bestsellers_item discount">
-									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_2.png" alt=""></div>
-										<div class="bestsellers_content">
-											<div class="bestsellers_category"><a href="#">Headphones</a></div>
-											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
-											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
-											<div class="bestsellers_price discount">$225<span>$300</span></div>
-										</div>
-									</div>
-									<div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
-									<ul class="bestsellers_marks">
-										<li class="bestsellers_mark bestsellers_discount">-25%</li>
-										<li class="bestsellers_mark bestsellers_new">new</li>
-									</ul>
-								</div>
-
-								<!-- Best Sellers Item -->
-								<div class="bestsellers_item">
-									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_3.png" alt=""></div>
-										<div class="bestsellers_content">
-											<div class="bestsellers_category"><a href="#">Headphones</a></div>
-											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
-											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
-											<div class="bestsellers_price discount">$225<span>$300</span></div>
-										</div>
-									</div>
-									<div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
-									<ul class="bestsellers_marks">
-										<li class="bestsellers_mark bestsellers_discount">-25%</li>
-										<li class="bestsellers_mark bestsellers_new">new</li>
-									</ul>
-								</div>
-
-								<!-- Best Sellers Item -->
-								<div class="bestsellers_item">
-									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_4.png" alt=""></div>
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_4.png" alt=""></div>
 										<div class="bestsellers_content">
 											<div class="bestsellers_category"><a href="#">Headphones</a></div>
 											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
@@ -3577,7 +3460,7 @@
 								<!-- Best Sellers Item -->
 								<div class="bestsellers_item discount">
 									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_5.png" alt=""></div>
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_5.png" alt=""></div>
 										<div class="bestsellers_content">
 											<div class="bestsellers_category"><a href="#">Headphones</a></div>
 											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
@@ -3595,115 +3478,7 @@
 								<!-- Best Sellers Item -->
 								<div class="bestsellers_item">
 									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_6.png" alt=""></div>
-										<div class="bestsellers_content">
-											<div class="bestsellers_category"><a href="#">Headphones</a></div>
-											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
-											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
-											<div class="bestsellers_price discount">$225<span>$300</span></div>
-										</div>
-									</div>
-									<div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
-									<ul class="bestsellers_marks">
-										<li class="bestsellers_mark bestsellers_discount">-25%</li>
-										<li class="bestsellers_mark bestsellers_new">new</li>
-									</ul>
-								</div>
-
-								<!-- Best Sellers Item -->
-								<div class="bestsellers_item discount">
-									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_1.png" alt=""></div>
-										<div class="bestsellers_content">
-											<div class="bestsellers_category"><a href="#">Headphones</a></div>
-											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
-											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
-											<div class="bestsellers_price discount">$225<span>$300</span></div>
-										</div>
-									</div>
-									<div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
-									<ul class="bestsellers_marks">
-										<li class="bestsellers_mark bestsellers_discount">-25%</li>
-										<li class="bestsellers_mark bestsellers_new">new</li>
-									</ul>
-								</div>
-
-								<!-- Best Sellers Item -->
-								<div class="bestsellers_item discount">
-									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_2.png" alt=""></div>
-										<div class="bestsellers_content">
-											<div class="bestsellers_category"><a href="#">Headphones</a></div>
-											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
-											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
-											<div class="bestsellers_price discount">$225<span>$300</span></div>
-										</div>
-									</div>
-									<div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
-									<ul class="bestsellers_marks">
-										<li class="bestsellers_mark bestsellers_discount">-25%</li>
-										<li class="bestsellers_mark bestsellers_new">new</li>
-									</ul>
-								</div>
-
-								<!-- Best Sellers Item -->
-								<div class="bestsellers_item">
-									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_3.png" alt=""></div>
-										<div class="bestsellers_content">
-											<div class="bestsellers_category"><a href="#">Headphones</a></div>
-											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
-											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
-											<div class="bestsellers_price discount">$225<span>$300</span></div>
-										</div>
-									</div>
-									<div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
-									<ul class="bestsellers_marks">
-										<li class="bestsellers_mark bestsellers_discount">-25%</li>
-										<li class="bestsellers_mark bestsellers_new">new</li>
-									</ul>
-								</div>
-
-								<!-- Best Sellers Item -->
-								<div class="bestsellers_item">
-									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_4.png" alt=""></div>
-										<div class="bestsellers_content">
-											<div class="bestsellers_category"><a href="#">Headphones</a></div>
-											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
-											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
-											<div class="bestsellers_price discount">$225<span>$300</span></div>
-										</div>
-									</div>
-									<div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
-									<ul class="bestsellers_marks">
-										<li class="bestsellers_mark bestsellers_discount">-25%</li>
-										<li class="bestsellers_mark bestsellers_new">new</li>
-									</ul>
-								</div>
-
-								<!-- Best Sellers Item -->
-								<div class="bestsellers_item discount">
-									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_5.png" alt=""></div>
-										<div class="bestsellers_content">
-											<div class="bestsellers_category"><a href="#">Headphones</a></div>
-											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
-											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
-											<div class="bestsellers_price discount">$225<span>$300</span></div>
-										</div>
-									</div>
-									<div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
-									<ul class="bestsellers_marks">
-										<li class="bestsellers_mark bestsellers_discount">-25%</li>
-										<li class="bestsellers_mark bestsellers_new">new</li>
-									</ul>
-								</div>
-
-								<!-- Best Sellers Item -->
-								<div class="bestsellers_item">
-									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_6.png" alt=""></div>
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_6.png" alt=""></div>
 										<div class="bestsellers_content">
 											<div class="bestsellers_category"><a href="#">Headphones</a></div>
 											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
@@ -3730,7 +3505,7 @@
 								<!-- Best Sellers Item -->
 								<div class="bestsellers_item discount">
 									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_1.png" alt=""></div>
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_1.png" alt=""></div>
 										<div class="bestsellers_content">
 											<div class="bestsellers_category"><a href="#">Headphones</a></div>
 											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
@@ -3748,7 +3523,7 @@
 								<!-- Best Sellers Item -->
 								<div class="bestsellers_item discount">
 									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_2.png" alt=""></div>
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_2.png" alt=""></div>
 										<div class="bestsellers_content">
 											<div class="bestsellers_category"><a href="#">Headphones</a></div>
 											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
@@ -3766,7 +3541,7 @@
 								<!-- Best Sellers Item -->
 								<div class="bestsellers_item">
 									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_3.png" alt=""></div>
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_3.png" alt=""></div>
 										<div class="bestsellers_content">
 											<div class="bestsellers_category"><a href="#">Headphones</a></div>
 											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
@@ -3784,115 +3559,7 @@
 								<!-- Best Sellers Item -->
 								<div class="bestsellers_item">
 									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_4.png" alt=""></div>
-										<div class="bestsellers_content">
-											<div class="bestsellers_category"><a href="#">Headphones</a></div>
-											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
-											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
-											<div class="bestsellers_price discount">$225<span>$300</span></div>
-										</div>
-									</div>
-									<div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
-									<ul class="bestsellers_marks">
-										<li class="bestsellers_mark bestsellers_discount">-25%</li>
-										<li class="bestsellers_mark bestsellers_new">new</li>
-									</ul>
-								</div>
-
-								<!-- Best Sellers Item -->
-								<div class="bestsellers_item discount">
-									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_5.png" alt=""></div>
-										<div class="bestsellers_content">
-											<div class="bestsellers_category"><a href="#">Headphones</a></div>
-											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
-											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
-											<div class="bestsellers_price discount">$225<span>$300</span></div>
-										</div>
-									</div>
-									<div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
-									<ul class="bestsellers_marks">
-										<li class="bestsellers_mark bestsellers_discount">-25%</li>
-										<li class="bestsellers_mark bestsellers_new">new</li>
-									</ul>
-								</div>
-
-								<!-- Best Sellers Item -->
-								<div class="bestsellers_item">
-									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_6.png" alt=""></div>
-										<div class="bestsellers_content">
-											<div class="bestsellers_category"><a href="#">Headphones</a></div>
-											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
-											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
-											<div class="bestsellers_price discount">$225<span>$300</span></div>
-										</div>
-									</div>
-									<div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
-									<ul class="bestsellers_marks">
-										<li class="bestsellers_mark bestsellers_discount">-25%</li>
-										<li class="bestsellers_mark bestsellers_new">new</li>
-									</ul>
-								</div>
-
-								<!-- Best Sellers Item -->
-								<div class="bestsellers_item discount">
-									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_1.png" alt=""></div>
-										<div class="bestsellers_content">
-											<div class="bestsellers_category"><a href="#">Headphones</a></div>
-											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
-											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
-											<div class="bestsellers_price discount">$225<span>$300</span></div>
-										</div>
-									</div>
-									<div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
-									<ul class="bestsellers_marks">
-										<li class="bestsellers_mark bestsellers_discount">-25%</li>
-										<li class="bestsellers_mark bestsellers_new">new</li>
-									</ul>
-								</div>
-
-								<!-- Best Sellers Item -->
-								<div class="bestsellers_item discount">
-									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_2.png" alt=""></div>
-										<div class="bestsellers_content">
-											<div class="bestsellers_category"><a href="#">Headphones</a></div>
-											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
-											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
-											<div class="bestsellers_price discount">$225<span>$300</span></div>
-										</div>
-									</div>
-									<div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
-									<ul class="bestsellers_marks">
-										<li class="bestsellers_mark bestsellers_discount">-25%</li>
-										<li class="bestsellers_mark bestsellers_new">new</li>
-									</ul>
-								</div>
-
-								<!-- Best Sellers Item -->
-								<div class="bestsellers_item">
-									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_3.png" alt=""></div>
-										<div class="bestsellers_content">
-											<div class="bestsellers_category"><a href="#">Headphones</a></div>
-											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
-											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
-											<div class="bestsellers_price discount">$225<span>$300</span></div>
-										</div>
-									</div>
-									<div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
-									<ul class="bestsellers_marks">
-										<li class="bestsellers_mark bestsellers_discount">-25%</li>
-										<li class="bestsellers_mark bestsellers_new">new</li>
-									</ul>
-								</div>
-
-								<!-- Best Sellers Item -->
-								<div class="bestsellers_item">
-									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_4.png" alt=""></div>
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_4.png" alt=""></div>
 										<div class="bestsellers_content">
 											<div class="bestsellers_category"><a href="#">Headphones</a></div>
 											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
@@ -3910,7 +3577,7 @@
 								<!-- Best Sellers Item -->
 								<div class="bestsellers_item discount">
 									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_5.png" alt=""></div>
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_5.png" alt=""></div>
 										<div class="bestsellers_content">
 											<div class="bestsellers_category"><a href="#">Headphones</a></div>
 											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
@@ -3928,7 +3595,340 @@
 								<!-- Best Sellers Item -->
 								<div class="bestsellers_item">
 									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/best_6.png" alt=""></div>
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_6.png" alt=""></div>
+										<div class="bestsellers_content">
+											<div class="bestsellers_category"><a href="#">Headphones</a></div>
+											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
+											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+											<div class="bestsellers_price discount">$225<span>$300</span></div>
+										</div>
+									</div>
+									<div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+									<ul class="bestsellers_marks">
+										<li class="bestsellers_mark bestsellers_discount">-25%</li>
+										<li class="bestsellers_mark bestsellers_new">new</li>
+									</ul>
+								</div>
+
+								<!-- Best Sellers Item -->
+								<div class="bestsellers_item discount">
+									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_1.png" alt=""></div>
+										<div class="bestsellers_content">
+											<div class="bestsellers_category"><a href="#">Headphones</a></div>
+											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
+											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+											<div class="bestsellers_price discount">$225<span>$300</span></div>
+										</div>
+									</div>
+									<div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+									<ul class="bestsellers_marks">
+										<li class="bestsellers_mark bestsellers_discount">-25%</li>
+										<li class="bestsellers_mark bestsellers_new">new</li>
+									</ul>
+								</div>
+
+								<!-- Best Sellers Item -->
+								<div class="bestsellers_item discount">
+									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_2.png" alt=""></div>
+										<div class="bestsellers_content">
+											<div class="bestsellers_category"><a href="#">Headphones</a></div>
+											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
+											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+											<div class="bestsellers_price discount">$225<span>$300</span></div>
+										</div>
+									</div>
+									<div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
+									<ul class="bestsellers_marks">
+										<li class="bestsellers_mark bestsellers_discount">-25%</li>
+										<li class="bestsellers_mark bestsellers_new">new</li>
+									</ul>
+								</div>
+
+								<!-- Best Sellers Item -->
+								<div class="bestsellers_item">
+									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_3.png" alt=""></div>
+										<div class="bestsellers_content">
+											<div class="bestsellers_category"><a href="#">Headphones</a></div>
+											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
+											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+											<div class="bestsellers_price discount">$225<span>$300</span></div>
+										</div>
+									</div>
+									<div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
+									<ul class="bestsellers_marks">
+										<li class="bestsellers_mark bestsellers_discount">-25%</li>
+										<li class="bestsellers_mark bestsellers_new">new</li>
+									</ul>
+								</div>
+
+								<!-- Best Sellers Item -->
+								<div class="bestsellers_item">
+									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_4.png" alt=""></div>
+										<div class="bestsellers_content">
+											<div class="bestsellers_category"><a href="#">Headphones</a></div>
+											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
+											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+											<div class="bestsellers_price discount">$225<span>$300</span></div>
+										</div>
+									</div>
+									<div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
+									<ul class="bestsellers_marks">
+										<li class="bestsellers_mark bestsellers_discount">-25%</li>
+										<li class="bestsellers_mark bestsellers_new">new</li>
+									</ul>
+								</div>
+
+								<!-- Best Sellers Item -->
+								<div class="bestsellers_item discount">
+									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_5.png" alt=""></div>
+										<div class="bestsellers_content">
+											<div class="bestsellers_category"><a href="#">Headphones</a></div>
+											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
+											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+											<div class="bestsellers_price discount">$225<span>$300</span></div>
+										</div>
+									</div>
+									<div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+									<ul class="bestsellers_marks">
+										<li class="bestsellers_mark bestsellers_discount">-25%</li>
+										<li class="bestsellers_mark bestsellers_new">new</li>
+									</ul>
+								</div>
+
+								<!-- Best Sellers Item -->
+								<div class="bestsellers_item">
+									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_6.png" alt=""></div>
+										<div class="bestsellers_content">
+											<div class="bestsellers_category"><a href="#">Headphones</a></div>
+											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
+											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+											<div class="bestsellers_price discount">$225<span>$300</span></div>
+										</div>
+									</div>
+									<div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+									<ul class="bestsellers_marks">
+										<li class="bestsellers_mark bestsellers_discount">-25%</li>
+										<li class="bestsellers_mark bestsellers_new">new</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="bestsellers_panel panel">
+
+							<!-- Best Sellers Slider -->
+
+							<div class="bestsellers_slider slider">
+
+								<!-- Best Sellers Item -->
+								<div class="bestsellers_item discount">
+									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_1.png" alt=""></div>
+										<div class="bestsellers_content">
+											<div class="bestsellers_category"><a href="#">Headphones</a></div>
+											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
+											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+											<div class="bestsellers_price discount">$225<span>$300</span></div>
+										</div>
+									</div>
+									<div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+									<ul class="bestsellers_marks">
+										<li class="bestsellers_mark bestsellers_discount">-25%</li>
+										<li class="bestsellers_mark bestsellers_new">new</li>
+									</ul>
+								</div>
+
+								<!-- Best Sellers Item -->
+								<div class="bestsellers_item discount">
+									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_2.png" alt=""></div>
+										<div class="bestsellers_content">
+											<div class="bestsellers_category"><a href="#">Headphones</a></div>
+											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
+											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+											<div class="bestsellers_price discount">$225<span>$300</span></div>
+										</div>
+									</div>
+									<div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
+									<ul class="bestsellers_marks">
+										<li class="bestsellers_mark bestsellers_discount">-25%</li>
+										<li class="bestsellers_mark bestsellers_new">new</li>
+									</ul>
+								</div>
+
+								<!-- Best Sellers Item -->
+								<div class="bestsellers_item">
+									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_3.png" alt=""></div>
+										<div class="bestsellers_content">
+											<div class="bestsellers_category"><a href="#">Headphones</a></div>
+											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
+											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+											<div class="bestsellers_price discount">$225<span>$300</span></div>
+										</div>
+									</div>
+									<div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
+									<ul class="bestsellers_marks">
+										<li class="bestsellers_mark bestsellers_discount">-25%</li>
+										<li class="bestsellers_mark bestsellers_new">new</li>
+									</ul>
+								</div>
+
+								<!-- Best Sellers Item -->
+								<div class="bestsellers_item">
+									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_4.png" alt=""></div>
+										<div class="bestsellers_content">
+											<div class="bestsellers_category"><a href="#">Headphones</a></div>
+											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
+											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+											<div class="bestsellers_price discount">$225<span>$300</span></div>
+										</div>
+									</div>
+									<div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
+									<ul class="bestsellers_marks">
+										<li class="bestsellers_mark bestsellers_discount">-25%</li>
+										<li class="bestsellers_mark bestsellers_new">new</li>
+									</ul>
+								</div>
+
+								<!-- Best Sellers Item -->
+								<div class="bestsellers_item discount">
+									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_5.png" alt=""></div>
+										<div class="bestsellers_content">
+											<div class="bestsellers_category"><a href="#">Headphones</a></div>
+											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
+											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+											<div class="bestsellers_price discount">$225<span>$300</span></div>
+										</div>
+									</div>
+									<div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+									<ul class="bestsellers_marks">
+										<li class="bestsellers_mark bestsellers_discount">-25%</li>
+										<li class="bestsellers_mark bestsellers_new">new</li>
+									</ul>
+								</div>
+
+								<!-- Best Sellers Item -->
+								<div class="bestsellers_item">
+									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_6.png" alt=""></div>
+										<div class="bestsellers_content">
+											<div class="bestsellers_category"><a href="#">Headphones</a></div>
+											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
+											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+											<div class="bestsellers_price discount">$225<span>$300</span></div>
+										</div>
+									</div>
+									<div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+									<ul class="bestsellers_marks">
+										<li class="bestsellers_mark bestsellers_discount">-25%</li>
+										<li class="bestsellers_mark bestsellers_new">new</li>
+									</ul>
+								</div>
+
+								<!-- Best Sellers Item -->
+								<div class="bestsellers_item discount">
+									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_1.png" alt=""></div>
+										<div class="bestsellers_content">
+											<div class="bestsellers_category"><a href="#">Headphones</a></div>
+											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
+											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+											<div class="bestsellers_price discount">$225<span>$300</span></div>
+										</div>
+									</div>
+									<div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+									<ul class="bestsellers_marks">
+										<li class="bestsellers_mark bestsellers_discount">-25%</li>
+										<li class="bestsellers_mark bestsellers_new">new</li>
+									</ul>
+								</div>
+
+								<!-- Best Sellers Item -->
+								<div class="bestsellers_item discount">
+									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_2.png" alt=""></div>
+										<div class="bestsellers_content">
+											<div class="bestsellers_category"><a href="#">Headphones</a></div>
+											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
+											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+											<div class="bestsellers_price discount">$225<span>$300</span></div>
+										</div>
+									</div>
+									<div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
+									<ul class="bestsellers_marks">
+										<li class="bestsellers_mark bestsellers_discount">-25%</li>
+										<li class="bestsellers_mark bestsellers_new">new</li>
+									</ul>
+								</div>
+
+								<!-- Best Sellers Item -->
+								<div class="bestsellers_item">
+									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_3.png" alt=""></div>
+										<div class="bestsellers_content">
+											<div class="bestsellers_category"><a href="#">Headphones</a></div>
+											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
+											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+											<div class="bestsellers_price discount">$225<span>$300</span></div>
+										</div>
+									</div>
+									<div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
+									<ul class="bestsellers_marks">
+										<li class="bestsellers_mark bestsellers_discount">-25%</li>
+										<li class="bestsellers_mark bestsellers_new">new</li>
+									</ul>
+								</div>
+
+								<!-- Best Sellers Item -->
+								<div class="bestsellers_item">
+									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_4.png" alt=""></div>
+										<div class="bestsellers_content">
+											<div class="bestsellers_category"><a href="#">Headphones</a></div>
+											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
+											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+											<div class="bestsellers_price discount">$225<span>$300</span></div>
+										</div>
+									</div>
+									<div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
+									<ul class="bestsellers_marks">
+										<li class="bestsellers_mark bestsellers_discount">-25%</li>
+										<li class="bestsellers_mark bestsellers_new">new</li>
+									</ul>
+								</div>
+
+								<!-- Best Sellers Item -->
+								<div class="bestsellers_item discount">
+									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_5.png" alt=""></div>
+										<div class="bestsellers_content">
+											<div class="bestsellers_category"><a href="#">Headphones</a></div>
+											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
+											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+											<div class="bestsellers_price discount">$225<span>$300</span></div>
+										</div>
+									</div>
+									<div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+									<ul class="bestsellers_marks">
+										<li class="bestsellers_mark bestsellers_discount">-25%</li>
+										<li class="bestsellers_mark bestsellers_new">new</li>
+									</ul>
+								</div>
+
+								<!-- Best Sellers Item -->
+								<div class="bestsellers_item">
+									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+										<div class="bestsellers_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/best_6.png" alt=""></div>
 										<div class="bestsellers_content">
 											<div class="bestsellers_category"><a href="#">Headphones</a></div>
 											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
@@ -3967,7 +3967,7 @@
 							<div class="advert_title"><a href="#">Trends 2018</a></div>
 							<div class="advert_text">Lorem ipsum dolor sit amet, consectetur adipiscing Donec et.</div>
 						</div>
-						<div class="ml-auto"><div class="advert_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/adv_1.png" alt=""></div></div>
+						<div class="ml-auto"><div class="advert_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/adv_1.png" alt=""></div></div>
 					</div>
 				</div>
 
@@ -3981,7 +3981,7 @@
 							<div class="advert_title_2"><a href="#">Sale -45%</a></div>
 							<div class="advert_text">Lorem ipsum dolor sit amet, consectetur.</div>
 						</div>
-						<div class="ml-auto"><div class="advert_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/adv_2.png" alt=""></div></div>
+						<div class="ml-auto"><div class="advert_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/adv_2.png" alt=""></div></div>
 					</div>
 				</div>
 
@@ -3994,7 +3994,7 @@
 							<div class="advert_title"><a href="#">Trends 2018</a></div>
 							<div class="advert_text">Lorem ipsum dolor sit amet, consectetur.</div>
 						</div>
-						<div class="ml-auto"><div class="advert_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/adv_3.png" alt=""></div></div>
+						<div class="ml-auto"><div class="advert_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/adv_3.png" alt=""></div></div>
 					</div>
 				</div>
 
@@ -4005,7 +4005,7 @@
 	<!-- Trends -->
 
 	<div class="trends">
-		<div class="trends_background" style="background-image:url(${pageContext.request.contextPath}/resources/images/front-end/trends_background.jpg)"></div>
+		<div class="trends_background" style="background-image:url(${PATH+=FRONTPAGE_DIR_IMAGES}/trends_background.jpg)"></div>
 		<div class="trends_overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -4033,7 +4033,7 @@
 							<!-- Trends Slider Item -->
 							<div class="owl-item">
 								<div class="trends_item is_new">
-									<div class="trends_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/trends_1.jpg" alt=""></div>
+									<div class="trends_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/trends_1.jpg" alt=""></div>
 									<div class="trends_content">
 										<div class="trends_category"><a href="#">Smartphones</a></div>
 										<div class="trends_info clearfix">
@@ -4052,7 +4052,7 @@
 							<!-- Trends Slider Item -->
 							<div class="owl-item">
 								<div class="trends_item">
-									<div class="trends_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/trends_2.jpg" alt=""></div>
+									<div class="trends_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/trends_2.jpg" alt=""></div>
 									<div class="trends_content">
 										<div class="trends_category"><a href="#">Smartphones</a></div>
 										<div class="trends_info clearfix">
@@ -4071,7 +4071,7 @@
 							<!-- Trends Slider Item -->
 							<div class="owl-item">
 								<div class="trends_item is_new">
-									<div class="trends_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/trends_3.jpg" alt=""></div>
+									<div class="trends_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/trends_3.jpg" alt=""></div>
 									<div class="trends_content">
 										<div class="trends_category"><a href="#">Smartphones</a></div>
 										<div class="trends_info clearfix">
@@ -4090,7 +4090,7 @@
 							<!-- Trends Slider Item -->
 							<div class="owl-item">
 								<div class="trends_item is_new">
-									<div class="trends_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/trends_1.jpg" alt=""></div>
+									<div class="trends_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/trends_1.jpg" alt=""></div>
 									<div class="trends_content">
 										<div class="trends_category"><a href="#">Smartphones</a></div>
 										<div class="trends_info clearfix">
@@ -4109,7 +4109,7 @@
 							<!-- Trends Slider Item -->
 							<div class="owl-item">
 								<div class="trends_item">
-									<div class="trends_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/trends_2.jpg" alt=""></div>
+									<div class="trends_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/trends_2.jpg" alt=""></div>
 									<div class="trends_content">
 										<div class="trends_category"><a href="#">Smartphones</a></div>
 										<div class="trends_info clearfix">
@@ -4128,7 +4128,7 @@
 							<!-- Trends Slider Item -->
 							<div class="owl-item">
 								<div class="trends_item is_new">
-									<div class="trends_image d-flex flex-column align-items-center justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/trends_3.jpg" alt=""></div>
+									<div class="trends_image d-flex flex-column align-items-center justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/trends_3.jpg" alt=""></div>
 									<div class="trends_content">
 										<div class="trends_category"><a href="#">Smartphones</a></div>
 										<div class="trends_info clearfix">
@@ -4172,7 +4172,7 @@
 							<!-- Reviews Slider Item -->
 							<div class="owl-item">
 								<div class="review d-flex flex-row align-items-start justify-content-start">
-									<div><div class="review_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/review_1.jpg" alt=""></div></div>
+									<div><div class="review_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/review_1.jpg" alt=""></div></div>
 									<div class="review_content">
 										<div class="review_name">Roberto Sanchez</div>
 										<div class="review_rating_container">
@@ -4187,7 +4187,7 @@
 							<!-- Reviews Slider Item -->
 							<div class="owl-item">
 								<div class="review d-flex flex-row align-items-start justify-content-start">
-									<div><div class="review_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/review_2.jpg" alt=""></div></div>
+									<div><div class="review_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/review_2.jpg" alt=""></div></div>
 									<div class="review_content">
 										<div class="review_name">Brandon Flowers</div>
 										<div class="review_rating_container">
@@ -4202,7 +4202,7 @@
 							<!-- Reviews Slider Item -->
 							<div class="owl-item">
 								<div class="review d-flex flex-row align-items-start justify-content-start">
-									<div><div class="review_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/review_3.jpg" alt=""></div></div>
+									<div><div class="review_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/review_3.jpg" alt=""></div></div>
 									<div class="review_content">
 										<div class="review_name">Emilia Clarke</div>
 										<div class="review_rating_container">
@@ -4217,7 +4217,7 @@
 							<!-- Reviews Slider Item -->
 							<div class="owl-item">
 								<div class="review d-flex flex-row align-items-start justify-content-start">
-									<div><div class="review_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/review_1.jpg" alt=""></div></div>
+									<div><div class="review_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/review_1.jpg" alt=""></div></div>
 									<div class="review_content">
 										<div class="review_name">Roberto Sanchez</div>
 										<div class="review_rating_container">
@@ -4232,7 +4232,7 @@
 							<!-- Reviews Slider Item -->
 							<div class="owl-item">
 								<div class="review d-flex flex-row align-items-start justify-content-start">
-									<div><div class="review_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/review_2.jpg" alt=""></div></div>
+									<div><div class="review_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/review_2.jpg" alt=""></div></div>
 									<div class="review_content">
 										<div class="review_name">Brandon Flowers</div>
 										<div class="review_rating_container">
@@ -4247,7 +4247,7 @@
 							<!-- Reviews Slider Item -->
 							<div class="owl-item">
 								<div class="review d-flex flex-row align-items-start justify-content-start">
-									<div><div class="review_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/review_3.jpg" alt=""></div></div>
+									<div><div class="review_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/review_3.jpg" alt=""></div></div>
 									<div class="review_content">
 										<div class="review_name">Emilia Clarke</div>
 										<div class="review_rating_container">
@@ -4290,7 +4290,7 @@
 							<!-- Recently Viewed Item -->
 							<div class="owl-item">
 								<div class="viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
-									<div class="viewed_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/view_1.jpg" alt=""></div>
+									<div class="viewed_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/view_1.jpg" alt=""></div>
 									<div class="viewed_content text-center">
 										<div class="viewed_price">$225<span>$300</span></div>
 										<div class="viewed_name"><a href="#">Beoplay H7</a></div>
@@ -4305,7 +4305,7 @@
 							<!-- Recently Viewed Item -->
 							<div class="owl-item">
 								<div class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-									<div class="viewed_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/view_2.jpg" alt=""></div>
+									<div class="viewed_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/view_2.jpg" alt=""></div>
 									<div class="viewed_content text-center">
 										<div class="viewed_price">$379</div>
 										<div class="viewed_name"><a href="#">LUNA Smartphone</a></div>
@@ -4320,7 +4320,7 @@
 							<!-- Recently Viewed Item -->
 							<div class="owl-item">
 								<div class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-									<div class="viewed_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/view_3.jpg" alt=""></div>
+									<div class="viewed_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/view_3.jpg" alt=""></div>
 									<div class="viewed_content text-center">
 										<div class="viewed_price">$225</div>
 										<div class="viewed_name"><a href="#">Samsung J730F...</a></div>
@@ -4335,7 +4335,7 @@
 							<!-- Recently Viewed Item -->
 							<div class="owl-item">
 								<div class="viewed_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-									<div class="viewed_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/view_4.jpg" alt=""></div>
+									<div class="viewed_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/view_4.jpg" alt=""></div>
 									<div class="viewed_content text-center">
 										<div class="viewed_price">$379</div>
 										<div class="viewed_name"><a href="#">Huawei MediaPad...</a></div>
@@ -4350,7 +4350,7 @@
 							<!-- Recently Viewed Item -->
 							<div class="owl-item">
 								<div class="viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
-									<div class="viewed_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/view_5.jpg" alt=""></div>
+									<div class="viewed_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/view_5.jpg" alt=""></div>
 									<div class="viewed_content text-center">
 										<div class="viewed_price">$225<span>$300</span></div>
 										<div class="viewed_name"><a href="#">Sony PS4 Slim</a></div>
@@ -4365,7 +4365,7 @@
 							<!-- Recently Viewed Item -->
 							<div class="owl-item">
 								<div class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-									<div class="viewed_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/view_6.jpg" alt=""></div>
+									<div class="viewed_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/view_6.jpg" alt=""></div>
 									<div class="viewed_content text-center">
 										<div class="viewed_price">$375</div>
 										<div class="viewed_name"><a href="#">Speedlink...</a></div>
@@ -4395,14 +4395,14 @@
 
 						<div class="owl-carousel owl-theme brands_slider">
 							
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/brands_1.jpg" alt=""></div></div>
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/brands_2.jpg" alt=""></div></div>
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/brands_3.jpg" alt=""></div></div>
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/brands_4.jpg" alt=""></div></div>
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/brands_5.jpg" alt=""></div></div>
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/brands_6.jpg" alt=""></div></div>
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/brands_7.jpg" alt=""></div></div>
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="${pageContext.request.contextPath}/resources/images/front-end/brands_8.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/brands_1.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/brands_2.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/brands_3.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/brands_4.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/brands_5.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/brands_6.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/brands_7.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/brands_8.jpg" alt=""></div></div>
 
 						</div>
 						
@@ -4424,7 +4424,7 @@
 				<div class="col">
 					<div class="newsletter_container d-flex flex-lg-row flex-column align-items-lg-center align-items-center justify-content-lg-start justify-content-center">
 						<div class="newsletter_title_container">
-							<div class="newsletter_icon"><img src="${pageContext.request.contextPath}/resources/images/front-end/send.png" alt=""></div>
+							<div class="newsletter_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/send.png" alt=""></div>
 							<div class="newsletter_title">Sign up for Newsletter</div>
 							<div class="newsletter_text"><p>...and receive %20 coupon for first shopping.</p></div>
 						</div>
@@ -4532,10 +4532,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </div>
 						<div class="logos ml-sm-auto">
 							<ul class="logos_list">
-								<li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/front-end/logos_1.png" alt=""></a></li>
-								<li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/front-end/logos_2.png" alt=""></a></li>
-								<li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/front-end/logos_3.png" alt=""></a></li>
-								<li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/front-end/logos_4.png" alt=""></a></li>
+								<li><a href="#"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/logos_1.png" alt=""></a></li>
+								<li><a href="#"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/logos_2.png" alt=""></a></li>
+								<li><a href="#"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/logos_3.png" alt=""></a></li>
+								<li><a href="#"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/logos_4.png" alt=""></a></li>
 							</ul>
 						</div>
 					</div>
@@ -4545,18 +4545,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</div>
 </div>
 
-<script src="${pageContext.request.contextPath}/resources/js/front-end/jquery-3.3.1.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/css/front-end/bootstrap4/popper.js"></script>
-<script src="${pageContext.request.contextPath}/resources/css/front-end/bootstrap4/bootstrap.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/plugins/front-end/greensock/TweenMax.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/plugins/front-end/greensock/TimelineMax.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/plugins/front-end/scrollmagic/ScrollMagic.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/plugins/front-end/greensock/animation.gsap.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/plugins/front-end/greensock/ScrollToPlugin.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/plugins/front-end/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="${pageContext.request.contextPath}/resources/plugins/front-end/slick-1.8.0/slick.js"></script>
-<script src="${pageContext.request.contextPath}/resources/plugins/front-end/easing/easing.js"></script>
-<script src="${pageContext.request.contextPath}/resources/js/front-end/custom.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/jquery-3.3.1.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/css/bootstrap4/popper.js"></script>
+<script src="${pageContext.request.contextPath}/resources/css/bootstrap4/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/plugins/greensock/TweenMax.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/plugins/greensock/TimelineMax.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/plugins/greensock/animation.gsap.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="${pageContext.request.contextPath}/resources/plugins/slick-1.8.0/slick.js"></script>
+<script src="${pageContext.request.contextPath}/resources/plugins/easing/easing.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/custom.js"></script>
 </body>
 
 </html>

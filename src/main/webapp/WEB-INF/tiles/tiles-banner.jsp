@@ -1,11 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/views/include/constant.jsp" %> 
     
 <%-- <div class="banner">
-	<div class="banner_background" style="background-image:url(${pageContext.request.contextPath}/resources/images/banner_background.jpg)"></div>
+	<div class="banner_background" style="background-image:url(${PATH+=FRONTPAGE_DIR_IMAGES}/banner_background.jpg)"></div>
 	<div class="container fill_height">
 		<div class="row fill_height">
-			<div class="banner_product_image"><img src="${pageContext.request.contextPath}/resources/images/banner_product.png" alt=""></div>
+			<div class="banner_product_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/banner_product.png" alt=""></div>
 			<div class="col-lg-5 offset-lg-4 fill_height">
 				<div class="banner_content">
 					<h1 class="banner_text">new era of smartphones</h1>
@@ -26,13 +27,13 @@
 			<li data-target="#slider" data-slide-to="2"></li>
 		</ol>
 		<div class="carousel-inner" role="listbox">
-			<div class="carousel-item active" style="background-image:url(${pageContext.request.contextPath}/resources/images/front-end/banner_background.jpg)">
+			<div class="carousel-item active" style="background-image:url(${PATH+=FRONTPAGE_DIR_IMAGES}/banner_background.jpg)">
 				<div class="carousel-caption d-none d-md-block"></div>
 			</div>
 			<div class="carousel-item" style="background-image: url('https://3.bp.blogspot.com/-_7vaKiNZPXk/XCWoF-0xj7I/AAAAAAAAAMk/Bx7Ne5WLEvINHPDoG1jwY6rGO2d62pprwCKgBGAs/s1600/ux-design.jpeg')">
 				<div class="carousel-caption d-none d-md-block"></div>
 			</div>
-			<div class="carousel-item" style="background-image:url(${pageContext.request.contextPath}/resources/images/front-end/banner_background.jpg)">
+			<div class="carousel-item" style="background-image:url(${PATH+=FRONTPAGE_DIR_IMAGES}/banner_background.jpg)">
 				<div class="carousel-caption d-none d-md-block"></div>
 			</div>
 		</div>

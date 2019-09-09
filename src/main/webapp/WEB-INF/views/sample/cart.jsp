@@ -8,10 +8,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="OneTech shop project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/front-end/bootstrap4/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/front-end/fontawesome-free-5.0.1/css/fontawesome-all.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/front-end/cart_styles.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/front-end/cart_responsive.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/bootstrap4/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/fontawesome-free-5.0.1/css/fontawesome-all.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/cart_styles.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/cart_responsive.css">
 
 </head>
 
@@ -29,8 +29,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col d-flex flex-row">
-						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="${pageContext.request.contextPath}/resources/images/front-end/phone.png" alt=""></div>+38 068 005 3570</div>
-						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="${pageContext.request.contextPath}/resources/images/front-end/mail.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a></div>
+						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/phone.png" alt=""></div>+38 068 005 3570</div>
+						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/mail.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a></div>
 						<div class="top_bar_content ml-auto">
 							<div class="top_bar_menu">
 								<ul class="standard_dropdown top_bar_dropdown">
@@ -53,7 +53,7 @@
 								</ul>
 							</div>
 							<div class="top_bar_user">
-								<div class="user_icon"><img src="${pageContext.request.contextPath}/resources/images/front-end/user.svg" alt=""></div>
+								<div class="user_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/user.svg" alt=""></div>
 								<div><a href="#">Register</a></div>
 								<div><a href="#">Sign in</a></div>
 							</div>
@@ -97,7 +97,7 @@
 												</ul>
 											</div>
 										</div>
-										<button type="submit" class="header_search_button trans_300" value="Submit"><img src="${pageContext.request.contextPath}/resources/images/front-end/search.png" alt=""></button>
+										<button type="submit" class="header_search_button trans_300" value="Submit"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/search.png" alt=""></button>
 									</form>
 								</div>
 							</div>
@@ -108,7 +108,7 @@
 					<div class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right">
 						<div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
 							<div class="wishlist d-flex flex-row align-items-center justify-content-end">
-								<div class="wishlist_icon"><img src="${pageContext.request.contextPath}/resources/images/front-end/heart.png" alt=""></div>
+								<div class="wishlist_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/heart.png" alt=""></div>
 								<div class="wishlist_content">
 									<div class="wishlist_text"><a href="#">Wishlist</a></div>
 									<div class="wishlist_count">115</div>
@@ -119,7 +119,7 @@
 							<div class="cart">
 								<div class="cart_container d-flex flex-row align-items-center justify-content-end">
 									<div class="cart_icon">
-										<img src="${pageContext.request.contextPath}/resources/images/front-end/cart.png" alt="">
+										<img src="${PATH+=FRONTPAGE_DIR_IMAGES}/cart.png" alt="">
 										<div class="cart_count"><span>10</span></div>
 									</div>
 									<div class="cart_content">
@@ -328,8 +328,8 @@
 							</ul>
 							
 							<div class="menu_contact">
-								<div class="menu_contact_item"><div class="menu_contact_icon"><img src="${pageContext.request.contextPath}/resources/images/front-end/phone_white.png" alt=""></div>+38 068 005 3570</div>
-								<div class="menu_contact_item"><div class="menu_contact_icon"><img src="${pageContext.request.contextPath}/resources/images/front-end/mail_white.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a></div>
+								<div class="menu_contact_item"><div class="menu_contact_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/phone_white.png" alt=""></div>+38 068 005 3570</div>
+								<div class="menu_contact_item"><div class="menu_contact_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/mail_white.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a></div>
 							</div>
 						</div>
 					</div>
@@ -350,7 +350,7 @@
 						<div class="cart_items">
 							<ul class="cart_list">
 								<li class="cart_item clearfix">
-									<div class="cart_item_image"><img src="${pageContext.request.contextPath}/resources/images/front-end/shopping_cart.jpg" alt=""></div>
+									<div class="cart_item_image"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/shopping_cart.jpg" alt=""></div>
 									<div class="cart_item_info d-flex flex-md-row flex-column justify-content-between">
 										<div class="cart_item_name cart_info_col">
 											<div class="cart_item_title">Name</div>
@@ -403,7 +403,7 @@
 				<div class="col">
 					<div class="newsletter_container d-flex flex-lg-row flex-column align-items-lg-center align-items-center justify-content-lg-start justify-content-center">
 						<div class="newsletter_title_container">
-							<div class="newsletter_icon"><img src="${pageContext.request.contextPath}/resources/images/front-end/send.png" alt=""></div>
+							<div class="newsletter_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/send.png" alt=""></div>
 							<div class="newsletter_title">Sign up for Newsletter</div>
 							<div class="newsletter_text"><p>...and receive %20 coupon for first shopping.</p></div>
 						</div>
@@ -511,10 +511,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </div>
 						<div class="logos ml-sm-auto">
 							<ul class="logos_list">
-								<li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/front-end/logos_1.png" alt=""></a></li>
-								<li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/front-end/logos_2.png" alt=""></a></li>
-								<li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/front-end/logos_3.png" alt=""></a></li>
-								<li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/front-end/logos_4.png" alt=""></a></li>
+								<li><a href="#"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/logos_1.png" alt=""></a></li>
+								<li><a href="#"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/logos_2.png" alt=""></a></li>
+								<li><a href="#"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/logos_3.png" alt=""></a></li>
+								<li><a href="#"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/logos_4.png" alt=""></a></li>
 							</ul>
 						</div>
 					</div>
@@ -524,16 +524,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</div>
 </div>
 
-<script src="${pageContext.request.contextPath}/resources/js/front-end/jquery-3.3.1.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/css/front-end/bootstrap4/popper.js"></script>
-<script src="${pageContext.request.contextPath}/resources/css/front-end/bootstrap4/bootstrap.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/plugins/front-end/greensock/TweenMax.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/plugins/front-end/greensock/TimelineMax.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/plugins/front-end/scrollmagic/ScrollMagic.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/plugins/front-end/greensock/animation.gsap.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/plugins/front-end/greensock/ScrollToPlugin.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/plugins/front-end/easing/easing.js"></script>
-<script src="${pageContext.request.contextPath}/resources/js/front-end/cart_custom.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/jquery-3.3.1.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/css/bootstrap4/popper.js"></script>
+<script src="${pageContext.request.contextPath}/resources/css/bootstrap4/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/plugins/greensock/TweenMax.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/plugins/greensock/TimelineMax.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/plugins/greensock/animation.gsap.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/plugins/easing/easing.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/cart_custom.js"></script>
 </body>
 
 </html>
