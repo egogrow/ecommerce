@@ -2,16 +2,18 @@ package com.egogrow.commerce.dao;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.mybatis.spring.SqlSessionTemplate;
-import org.springframework.beans.factory.annotation.Autowired;
  
 public class AbstractDAO {
      
 	protected Log log = LogFactory.getLog(AbstractDAO.class);
-     
-    @Autowired
+    
+	// SqlSessionTemplate DI
+	@Inject
     private SqlSessionTemplate sqlSession;
       
     protected void printQueryId(String queryId) {

@@ -3,8 +3,10 @@ package com.egogrow.commerce.controller;
 import java.util.List;
 import java.util.Map;
 
-import javax.annotation.Resource;
+import javax.inject.Inject;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -13,54 +15,78 @@ import org.springframework.web.servlet.ModelAndView;
 import com.egogrow.commerce.dto.CategoryDTO;
 import com.egogrow.commerce.service.CategoryService;
 
+/**
+ * @project commerce
+ * @class MainController.java
+ * @classDoc 메인 컨트롤러
+ *
+ * @date 2019. 9. 10.
+ * @author 이지훈
+ */
 @Controller
 public class MainController {
 
-    @Resource(name = "categoryService")
-    private CategoryService categoryService;	
+	private static final Logger logger = LoggerFactory.getLogger(MainController.class);
 	
+	@Inject
+    private CategoryService categoryService;	
+
+	/**
+	 * @project commerce
+	 * @method getIndex
+	 * @return ModelAndView
+	 * @throws Exception
+	 * @mothodDoc 카테고리 데이터 메인 화면 전달
+	 *
+	 * @date 2019. 9. 10.
+	 * @author 이지훈
+	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)	
-	public ModelAndView main() throws Exception {
+	public ModelAndView getIndex() throws Exception {
+		
+		System.out.println("main");
 		
 		ModelAndView mv = new ModelAndView("main/index");
 		Map<String,List<CategoryDTO>> categoryList = categoryService.categoryList();
-//		System.out.println(categoryList);
 		mv.addObject("categoryList",categoryList);
-//		mv.att
-//		Map<String,Object> map = new HashMap<>();
-//		map.put("list",list);
-//		mv.addObject("map",map);		
-//		List<ProductDTO> list = productService.listAll();
-//		ModelAndView mav = new ModelAndView();
-//		mav.setViewName("shop/product");
-//		Map<String,Object> map = new HashMap<>();
-//		map.put("list",list);
-//		mav.addObject("map",map);
-//		
-//		System.out.println("productController call end");
-//		
-//		return mav;		
 		
 		return mv;
 	}
 	
     /**
-     * �븮�� ��� ��ȸ
-     * 
-     * @param vo
-     * @return
-     * @throws Exception
-     */
-	/*	
-    @ResponseBody
-    @RequestMapping(value = "/searchAgeincy.do", produces = "application/text; charset=utf8")
-    public String searchAgeincy(@ModelAttribute AgencyVO vo) throws Exception {
-
-        List<AgencyVO> list = agencyService.selectAgencyList(vo);
-        Map<String, Object> returnData = new HashMap<String, Object>();
-        returnData.put("data", list);
-        ObjectMapper mapper = new ObjectMapper();
-        return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(returnData);
-    }	*/
+     * Tiles를 사용하지 않은 일반적인 형태
+     */    
+    @RequestMapping("/index")
+    public String index() {
+        return "sample/index";
+    }
+    @RequestMapping("/blog")
+    public String blog() {
+        return "sample/blog";
+    }    
+    @RequestMapping("/blog_single")
+    public String blog_single() {
+        return "sample/blog_single";
+    }     
+    @RequestMapping("/cart")
+    public String cart() {
+        return "sample/cart";
+    }        
+    @RequestMapping("/contact")
+    public String contact() {
+        return "sample/contact";
+    }        
+    @RequestMapping("/product")
+    public String product() {
+        return "sample/product";
+    }        
+    @RequestMapping("/reqular")
+    public String reqular() {
+        return "sample/reqular";
+    }        
+    @RequestMapping("/shop")
+    public String shop() {
+        return "sample/shop";
+    }	
 	
 }

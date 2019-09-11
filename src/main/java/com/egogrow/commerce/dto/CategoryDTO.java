@@ -1,6 +1,12 @@
 package com.egogrow.commerce.dto;
 
 public class CategoryDTO {
+/*  
+    CATEGORY_CODE		varchar(20)		not null,
+    CATEGORY_NAME		varchar(255)	not null,
+    CATEGORY_CODE_REF	varchar(20)		null,
+    CATEGORY_DEPTH		tinyint(2)		not null,
+*/
 	
 	private String categoryCode;
 	private String categoryName;

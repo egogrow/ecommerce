@@ -9,22 +9,32 @@ import org.springframework.stereotype.Repository;
 
 import com.egogrow.commerce.dto.CategoryDTO;
 
-@Repository("categoryDAO")
+/**
+ * @project commerce
+ * @class CategoryDAO.java
+ * @classDoc 카테고리 DAO
+ *
+ * @date 2019. 9. 10.
+ * @author 이지훈
+ */
+@Repository
 public class CategoryDAO extends AbstractDAO {
 
-	// SqlSessionTemplate DI
     @Inject
     private SqlSessionTemplate sqlSession;
     
-    /**
-     * ī�װ��� ��� ��ȸ
-     * 
-     * @param dto
-     * @return
-     * @throws Exception
-     */
+
+	/**
+	 * @project commerce
+	 * @method categoryList
+	 * @return List<CategoryDTO>
+	 * @throws Exception
+	 * @mothodDoc 카테고리 데이터 엑세스
+	 *
+	 * @date 2019. 9. 10.
+	 * @author 이지훈
+	 */
 	public List<CategoryDTO> categoryList() throws Exception {
-//		List<CategoryDTO> list = 
 		return sqlSession.selectList("category.listAll");
 	}
 	

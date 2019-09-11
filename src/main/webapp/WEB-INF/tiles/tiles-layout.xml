@@ -4,27 +4,42 @@
  
 <tiles-definitions>
  
-    <!-- 타일즈 표시 탬플릿 설정 -->
-    <definition name="layouts-tiles" template="/WEB-INF/tiles/tiles-layouts.jsp">
+    <!-- font page 타일즈 탬플릿 -->
+    <definition name="tiles-front-page-layouts" template="/WEB-INF/tiles/tiles-front-page-layouts.jsp">
     	<put-attribute name="title" value="부르주아 대표! 모찌마켓" />
-    	<put-attribute name="header" value="/WEB-INF/tiles/tiles-header.jsp" />
-    	<!-- <put-attribute name="menu"   value="/WEB-INF/tiles/tiles-menu.jsp" /> -->
-    	<put-attribute name="banner" value="/WEB-INF/tiles/tiles-banner.jsp" />    	
-		<put-attribute name="footer" value="/WEB-INF/tiles/tiles-footer.jsp" />
+    	<put-attribute name="header" value="/WEB-INF/tiles/tiles-front-page-header.jsp" />
+    	<put-attribute name="banner" value="/WEB-INF/tiles/tiles-front-page-banner.jsp" />    	
+		<put-attribute name="footer" value="/WEB-INF/tiles/tiles-front-page-footer.jsp" />
     </definition>
     
-    <!-- 타일즈 미표시 탬플릿 설정 -->
-	<definition name="layouts-empty-tiles" template="/WEB-INF/tiles/tiles-empty-layouts.jsp">
-		<put-attribute name="title" value="부르주아 대표! 모찌마켓" />
-	</definition>
+    <!-- back office 타일즈 탬플릿 -->
+    <definition name="tiles-back-office-layouts" template="/WEB-INF/tiles/tiles-back-office-layouts.jsp">
+    	<put-attribute name="title" value="부르주아 대표! 모찌마켓" />
+    	<put-attribute name="header" value="/WEB-INF/tiles/tiles-back-office-header.jsp" />
+    	<put-attribute name="menu"   value="/WEB-INF/tiles/tiles-back-office-menu.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/tiles-back-office-footer.jsp" />
+    </definition>
     
-    <!-- sample 설정 -->
-    <definition name="sample/*" extends="layouts-empty-tiles">
-		<put-attribute name="body" value="/WEB-INF/views/sample/{1}.jsp" />
+    <!-- 타일즈 미표시 탬플릿 -->
+	<definition name="tiles-empty-layouts" template="/WEB-INF/tiles/tiles-empty-layouts.jsp" />	
+    
+    <!-- front page test 용 sample/* -->
+    <definition name="sample/*" extends="tiles-empty-layouts">
+		<put-attribute name="layout" value="/WEB-INF/views/sample/{1}.jsp" />
+	</definition>
+	
+	<!-- admin/login -->
+    <definition name="admin/login" extends="tiles-empty-layouts">
+		<put-attribute name="layout" value="/WEB-INF/views/admin/login.jsp" />
 	</definition>
 
-	<!-- 모든 설정 -->    
-	<definition name="*/*" extends="layouts-tiles">
+	<!-- admin/* -->    
+	<definition name="admin/*" extends="tiles-back-office-layouts">
+		<put-attribute name="body" value="/WEB-INF/views/admin/{1}.jsp" />
+	</definition>
+
+	<!-- 위 설정 제외 후 나머지 -->    
+	<definition name="*/*" extends="tiles-front-page-layouts">
 		<put-attribute name="body" value="/WEB-INF/views/{1}/{2}.jsp" />
 	</definition>
 

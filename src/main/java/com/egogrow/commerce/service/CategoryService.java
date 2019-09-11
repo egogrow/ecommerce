@@ -7,7 +7,7 @@ import com.egogrow.commerce.dto.CategoryDTO;
 
 public interface CategoryService {
 	
-	// Ä«Å×°í¸® ¸ñ·Ï Á¶È¸
+	// ì¹´í…Œê³ ë¦¬
 	Map<String,List<CategoryDTO>> categoryList() throws Exception;
 	
 }

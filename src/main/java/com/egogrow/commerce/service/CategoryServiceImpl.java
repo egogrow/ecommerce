@@ -5,19 +5,19 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.annotation.Resource;
+import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
 
 import com.egogrow.commerce.dao.CategoryDAO;
 import com.egogrow.commerce.dto.CategoryDTO;
 
-@Service("categoryService")
+@Service
 public class CategoryServiceImpl implements CategoryService {
 	
-	@Resource(name = "categoryDAO")
+	@Inject
 	private CategoryDAO categoryDAO;
-
+	
 	@Override
 	public Map<String,List<CategoryDTO>> categoryList() throws Exception {
 
