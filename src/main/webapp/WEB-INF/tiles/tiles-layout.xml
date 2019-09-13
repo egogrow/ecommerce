@@ -28,9 +28,9 @@
 		<put-attribute name="layout" value="/WEB-INF/views/sample/{1}.jsp" />
 	</definition>
 	
-	<!-- admin/login -->
-    <definition name="admin/login" extends="tiles-empty-layouts">
-		<put-attribute name="layout" value="/WEB-INF/views/admin/login.jsp" />
+	<!-- login/* -->
+    <definition name="login/*" extends="tiles-empty-layouts">
+		<put-attribute name="layout" value="/WEB-INF/views/login/{1}.jsp" />
 	</definition>
 
 	<!-- admin/* -->    

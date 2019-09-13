@@ -42,10 +42,8 @@ public class MainController {
 	 * @author 이지훈
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)	
-	public ModelAndView getIndex() throws Exception {
-		
+	public ModelAndView mainPage() throws Exception {
 		System.out.println("main");
-		
 		ModelAndView mv = new ModelAndView("main/index");
 		Map<String,List<CategoryDTO>> categoryList = categoryService.categoryList();
 		mv.addObject("categoryList",categoryList);

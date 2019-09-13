@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%@ include file="/WEB-INF/views/include/constant.jsp" %>
 
 <header class="header">
@@ -15,7 +16,12 @@
 						<div class="top_bar_user">
 							<div class="user_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/user.svg" alt=""></div>
 							<div><a href="#">회원가입</a></div>
-							<div><a href="#">로그인</a></div>
+							<sec:authorize access="isAnonymous()">							
+								<div><a href='<c:url value="/login/login"/>'>로그인</a></div>
+							</sec:authorize>
+							<sec:authorize access="isAuthenticated()">
+								<a href="${CONTEXT }/j_spring_security_logout">로그아웃</a>
+							</sec:authorize>
 						</div>
 					</div>
 				</div>
