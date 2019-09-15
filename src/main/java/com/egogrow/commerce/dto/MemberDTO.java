@@ -8,7 +8,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 @SuppressWarnings("serial")
-public class UserAuthDTO implements UserDetails {
+public class MemberDTO implements UserDetails {
 	
 	private String userId;
 	private String userPassword;

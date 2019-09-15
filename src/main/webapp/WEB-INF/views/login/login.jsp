@@ -55,7 +55,7 @@
                         </div>
                         <div class="form-gp">
                             <label for="exampleInputPassword1">Password</label>
-                            <input type="password" name="loginPasswd" id="exampleInputPassword1">
+                            <input type="password" name="loginPassword" id="exampleInputPassword1">
                             <i class="ti-lock"></i>
                         </div>
                         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"  />

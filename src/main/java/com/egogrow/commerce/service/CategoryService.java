@@ -8,6 +8,6 @@ import com.egogrow.commerce.dto.CategoryDTO;
 public interface CategoryService {
 	
 	// 카테고리
-	Map<String,List<CategoryDTO>> categoryList() throws Exception;
+	public Map<String,List<CategoryDTO>> categoryList() throws Exception;
 	
 }
