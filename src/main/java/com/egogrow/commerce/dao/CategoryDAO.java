@@ -17,7 +17,7 @@ import com.egogrow.commerce.dto.CategoryDTO;
  * @date 2019. 9. 10.
  * @author 이지훈
  */
-@Repository
+@Repository("categoryDAO")
 public class CategoryDAO extends AbstractDAO {
 
     @Inject

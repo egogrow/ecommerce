@@ -9,7 +9,8 @@
     </settings>
     
 	<typeAliases>
-		<typeAlias alias="categoryDTO" type="com.egogrow.commerce.dto.CategoryDTO"/> <!-- 별칭 -->
+		<typeAlias alias="categoryDTO" type="com.egogrow.commerce.dto.CategoryDTO" /> <!-- 별칭 -->
+		<typeAlias alias="userAuthDTO" type="com.egogrow.commerce.dto.UserAuthDTO" />
 	</typeAliases>
 
 </configuration>

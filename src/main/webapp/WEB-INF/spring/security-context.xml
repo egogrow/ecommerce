@@ -1,33 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans:beans xmlns="http://www.springframework.org/schema/security"
-    xmlns:beans="http://www.springframework.org/schema/beans"
+<beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd
-		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
-    
-    <!-- 권한에 따라 접근 가능한 경로 제한 -->
-<!--     <http auto-config="true" use-expressions="true">
-        <intercept-url pattern="/login/loginForm" access="permitAll" /> 로그인 폼 URL에는 로그인 하지 않아도 접근할 수 있도록 합니다.
-        <intercept-url pattern="/" access="permitAll" /> 메인화면도 로그인 없이 접근할 수 있도록 합니다.
-        <intercept-url pattern="/admin/**" access="hasRole('ADMIN')" /> /admin/** URL 은 ADMIN 권한이 있어야 접근할 수 있도록 합니다.
-        <intercept-url pattern="/**" access="hasAnyRole('USER, ADMIN')" /> 그 외 나머지는 USER 또는 ADMIN중 하나로도 권한이 있으면 접근할 수 있습니다.
-        
-		login-page: 커스텀 로그인 페이지를 지정
-		default-target-url: 로그인 후에 기본으로 보여질 페이지 입니다. 특정 페이지를 클릭해서 로그인 화면이 나왔다면 로그인 성공후 앞서 클릭한 페이지로 이동합니다.
-		authentication-failure-url: 로그인 실패시 보여질 페이지를 지정합니다. 여기서는 로그인 페이지를 다시 보여줍니다. 기본값은 /login?error 입니다.
-		username-parameter: 로그인 폼에 아이디 입력 필드에 사용될 name 입니다. 기본값은 "username"입니다.
-		password-parameter: 로그인 폼에 비밀번호 입력 필드에 사용될 name 입니다. 기본값은 "password" 입니다.
-       
-        <form-login login-page="/login/loginForm" 
-                    default-target-url="/"
-                    authentication-failure-url="/login/loginForm?error"
-                    username-parameter="id"
-                    password-parameter="password" />
-        <logout logout-url="/logout"
-                logout-success-url="/" />
-                
-        <access-denied-handler error-page="/login/accessDenied" />
-    </http> -->
+	xmlns:security="http://www.springframework.org/schema/security"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.1.xsd
+						http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+							
+	<context:component-scan base-package="com.egogrow.commerce.dao" />
     <!--
 	 hasRole('role1'): 권한(role1)을 가지고 있는 경우
 	 hasAnyRole('role1', 'role2'): 권한들(role1, role2) 하나라도 가지고 있을 경우 (갯수는 제한없다)
@@ -37,52 +17,65 @@
 	 isRememberMe(): Remember-me 기능으로 로그인한 사용자일 경우
 	 isAuthenticated(): Anonymous 사용자가 아닐 경우 (인증을 한 사용자)	
 	 isFullyAuthenticated(): Anonymous 사용자가 아니고 Remember-me 기능으로 로그인 하지 않은 사용자 일 경우
-    -->
-    
-    <!--
-    비회원(GUEST), 준회원(USER), 정회원(MEMBER), 관리자(ADMIN)
-    /member/**: 정회원, 관리자
-    /user/**: 준회원, 정회원, 관리자
-    /admin/**: 관리자  
-    /**: 로그인 하지 않은 사용자 접근 허용
-    -->
-	<http auto-config="true" use-expressions="true">
-	    <intercept-url pattern="/member/**" access="hasAnyRole('ROLE_MEMBER','ROLE_ADMIN')"/>
-	    <intercept-url pattern="/user/**" access="hasAnyRole('ROLE_USER','ROLE_MEMBER','ROLE_ADMIN')"/>
-	    <intercept-url pattern="/admin/**" access="hasRole('ROLE_ADMIN')"/>
-	    <intercept-url pattern="/**" access="permitAll"/>
+    -->	
+       
+	<security:http auto-config="true" use-expressions="true">
+	    <security:intercept-url pattern="/member/**" access="hasAnyRole('ROLE_MEMBER','ROLE_ADMIN')"/>
+	    <security:intercept-url pattern="/user/**" access="hasAnyRole('ROLE_USER','ROLE_MEMBER','ROLE_ADMIN')"/>
+	    <security:intercept-url pattern="/admin/**" access="hasRole('ROLE_ADMIN')"/>
+	    <security:intercept-url pattern="/**" access="permitAll"/>
 	    
-	    <!-- 권한 설정 -->
-<!-- 		 <form-login login-page="/login/loginForm" 
-		                    default-target-url="/"
-		                    authentication-failure-url="/login/loginForm?error"
-		                    username-parameter="id"
-		                    password-parameter="password" />	  -->       
-	    <form-login
-	        username-parameter="loginId"
-	        password-parameter="loginPwd"
-	        login-processing-url="/login"
-	        login-page="/login/login"
-	        default-target-url="/"
+	    <security:form-login
+	    	username-parameter="loginId"
+	    	password-parameter="loginPasswd"
+	    	login-processing-url="/login"
+	    	login-page="/login/login"
+	    	default-target-url="/"
 	    />
 	    
 	    <!-- error-page="/login/accessDenied" -->
-		<access-denied-handler
-		    error-page="/login/accessDeniedAlert"
-		/>
-
-<!--  https://to-dy.tistory.com/81?category=720806 / 2019-09-14 / 이어서 진행 필요  -->
-	</http>
-    
+	    <security:access-denied-handler
+	    	error-page="/login/accessDeniedAlert"
+	    />
+	    
+	    <security:logout
+	    	logout-url="/logout"
+	    	invalidate-session="true"
+	    	logout-success-url="/"
+	    />	    
+	</security:http>
+	
     <!--  provider  -->
-    <authentication-manager>
-        <authentication-provider>
-            <user-service>
-                <user name="user" password="1234" authorities="ROLE_USER" />
-                <user name="member" password="1234" authorities="ROLE_MEMBER" />
-                <user name="admin" password="1234" authorities="ROLE_ADMIN" />
-            </user-service>
-        </authentication-provider>
-    </authentication-manager>
+<!--     
+    <security:authentication-manager>
+        <security:authentication-provider>
+            <security:user-service>
+                <security:user name="user" password="1234" authorities="ROLE_USER" />
+                <security:user name="member" password="1234" authorities="ROLE_MEMBER" />
+                <security:user name="admin" password="1234" authorities="ROLE_ADMIN" />
+            </security:user-service>
+        </security:authentication-provider>
+    </security:authentication-manager>
+ -->
+ <!--    
+	<security:jdbc-user-service data-source-ref="dataSource" id="userService"
+	    users-by-username-query="SELECT USER_ID as loginId, USER_PASSWORD as loginPasswd, USER_ENABLED FROM users WHERE USER_ID=?"
+	    authorities-by-username-query="SELECT USER_ID as loginID, USER_AUTHORITY FROM users WHERE USER_ID=?"
+	/>
+        
+	<security:authentication-manager>
+	    <security:authentication-provider user-service-ref="userService">
+	    </security:authentication-provider>
+	</security:authentication-manager>	
+ -->	
+	<security:authentication-manager>
+		<security:authentication-provider ref="userAuthProvider"/>
+	    <security:authentication-provider user-service-ref="userService">
+	    </security:authentication-provider>
+	</security:authentication-manager>
+	
+	<bean id="userService" class="com.egogrow.commerce.service.UserServiceImpl" />
+	<!-- <bean id="userAuthProvider" class="com.egogrow.commerce.security.UserAuthProvider" /> -->
+	<bean id="userAuthProvider" class="com.egogrow.commerce.service.UserAuthProvider" />
     
-</beans:beans>
+</beans>

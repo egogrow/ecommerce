@@ -3,6 +3,17 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%@ include file="/WEB-INF/views/include/constant.jsp" %>
+<%@ page import="org.springframework.security.core.context.SecurityContextHolder" %>
+<%@ page import="org.springframework.security.core.Authentication" %>
+<%
+	Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+	Object principal = auth.getPrincipal();
+	
+	String name = "";
+	if(principal != null) {
+		name = auth.getName();
+	}
+%>
 
 <header class="header">
 	<!-- 최상단 바 -->
@@ -14,14 +25,20 @@
 					<div class="top_bar_contact_item"><a href="">고객센터</a></div>				
 					<div class="top_bar_content ml-auto">
 						<div class="top_bar_user">
-							<div class="user_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/user.svg" alt=""></div>
-							<div><a href="#">회원가입</a></div>
-							<sec:authorize access="isAnonymous()">							
+							<div class="user_icon"><img src="${PATH+=FRONTPAGE_DIR_IMAGES}/user.svg" alt=""></div>							
+							<sec:authorize access="isAnonymous()">
+								<div><a href="#">회원가입</a></div>							
 								<div><a href='<c:url value="/login/login"/>'>로그인</a></div>
 							</sec:authorize>
 							<sec:authorize access="isAuthenticated()">
-								<a href="${CONTEXT }/j_spring_security_logout">로그아웃</a>
+							    <span class="user_text"><%=name %></span><span class="user_text_etc">님</span>
+								<a href="#" onclick="document.getElementById('logoutForm').submit();">로그아웃</a>
+								<form id="logoutForm" action='<c:url value='/logout'/>' method="POST">
+								   <input name="${_csrf.parameterName}" type="hidden" value="${_csrf.token}"/>
+								</form>			    
 							</sec:authorize>
+							
+							
 						</div>
 					</div>
 				</div>

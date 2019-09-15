@@ -5,6 +5,11 @@
 
 <mapper namespace="product">
 	<select id="listAll" resultType="com.egogrow.commerce.shop.ProductDTO">
-		SELECT product_no, product_name, product_price, product_stock, product_explain, product_reg_date FROM PRODUCT	
+		<![CDATA[
+		SELECT 
+			product_no, product_name, product_price, product_stock, product_explain, product_reg_date 
+		FROM 
+			PRODUCT
+		]]>			
 	</select>
 </mapper>

@@ -257,6 +257,31 @@
 {
 	color: #8a8a8a;
 }
+.top_bar_user .user_text
+{
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 35px;
+	color: #000;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.top_bar_user .user_text_etc
+{
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 35px;
+	color: #000;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+	margin-right: 20px;
+}
 
 /*********************************
 3.2 Header Main

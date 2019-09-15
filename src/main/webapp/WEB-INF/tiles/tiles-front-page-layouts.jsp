@@ -16,7 +16,7 @@
 	<!-- 공용 -->
 	<link rel="stylesheet" type="text/css" href="${PATH+=FRONTPAGE_DIR_CSS}/layout.css?v1"> 
 	<!-- 헤더 및 메인 -->
-	<link rel="stylesheet" type="text/css" href="${PATH+=FRONTPAGE_DIR_CSS}/main_styles.css"> 
+	<link rel="stylesheet" type="text/css" href="${PATH+=FRONTPAGE_DIR_CSS}/main_styles.css?v2"> 
 	<!-- 부트스트랩 css -->
 	<link rel="stylesheet" type="text/css" href="${PATH+=DIR_BOOTSTRAP4}/bootstrap.min.css">
 	<!-- 모바일 css --> 
