@@ -6,15 +6,14 @@
 <%@ page import="org.springframework.security.core.context.SecurityContextHolder" %>
 <%@ page import="org.springframework.security.core.Authentication" %>
 <%
-	Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+/*  	Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 	Object principal = auth.getPrincipal();
 	
 	String name = "";
 	if(principal != null) {
 		name = auth.getName();
-	}
+	} */
 %>
-
 <header class="header">
 	<!-- 최상단 바 -->
 	<div class="top_bar">
@@ -31,7 +30,7 @@
 								<div><a href='<c:url value="/login/login"/>'>로그인</a></div>
 							</sec:authorize>
 							<sec:authorize access="isAuthenticated()">
-							    <span class="user_text"><%=name %></span><span class="user_text_etc">님</span>
+							    <span class="user_text"></span><span class="user_text_etc">님</span>
 								<a href="#" onclick="document.getElementById('logoutForm').submit();">로그아웃</a>
 								<form id="logoutForm" action='<c:url value='/logout'/>' method="POST">
 								   <input name="${_csrf.parameterName}" type="hidden" value="${_csrf.token}"/>

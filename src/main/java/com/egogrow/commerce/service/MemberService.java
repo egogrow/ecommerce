@@ -5,7 +5,6 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
 public interface MemberService extends UserDetailsService {
-	
 	/**
 	 * ID와 일치하는 계정의 정보를 조회하는 메서드 입니다.
 	 * 다음의 구현 원칙을 따르십시오.
@@ -15,6 +14,6 @@ public interface MemberService extends UserDetailsService {
 	 * @param id 조회할 계정 ID 
 	 */
 	@Override
-	public UserDetails loadUserByUsername(String id) throws UsernameNotFoundException;
+	public UserDetails loadUserByUsername(String id) throws UsernameNotFoundException;	
 	
 }

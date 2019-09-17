@@ -43,6 +43,10 @@ public class MainController {
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)	
 	public ModelAndView mainPage() throws Exception {
+//		MemberDTO user = (MemberDTO) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+//		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		
+		
 		System.out.println("main");
 		ModelAndView mv = new ModelAndView("main/index");
 		Map<String,List<CategoryDTO>> categoryList = categoryService.categoryList();
