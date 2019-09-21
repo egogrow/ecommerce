@@ -50,15 +50,15 @@
                     <div class="login-form-body">
                         <div class="form-gp">
                             <label for="exampleInputId">Id or Email address</label>
-                            <input type="text" name="loginId" id="exampleInputEmail1">
+                            <input type="text" name="ssoId" id="exampleInputEmail1">
                             <i class="ti-email"></i>
                         </div>
                         <div class="form-gp">
                             <label for="exampleInputPassword1">Password</label>
-                            <input type="password" name="loginPassword" id="exampleInputPassword1">
+                            <input type="password" name="password" id="exampleInputPassword1">
                             <i class="ti-lock"></i>
                         </div>
-                        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"  />
+                        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
                         
 						<c:if test="${not empty SPRING_SECURITY_LAST_EXCEPTION}">
 	                            <p class="text-muted text-center mb-2">${sessionScope["SPRING_SECURITY_LAST_EXCEPTION"].message}</p>

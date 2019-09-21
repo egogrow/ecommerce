@@ -14,7 +14,7 @@ public class CategoryDTO {
 	private Integer categoryCodeRefCount;
 	
 	/**
-	 * 권한 일련 번호를 반환합니다.
+	 * .
 	 * @return
 	 */
 	public String getCategoryCode() {
@@ -22,7 +22,7 @@ public class CategoryDTO {
 	}
 	
 	/**
-	 * 권한 일련 번호를 반환합니다.
+	 * .
 	 * @return
 	 */
 	public void setCategoryCode(String categoryCode) {
@@ -30,7 +30,7 @@ public class CategoryDTO {
 	}
 	
 	/**
-	 * 권한 일련 번호를 반환합니다.
+	 * .
 	 * @return
 	 */
 	public String getCategoryName() {
@@ -38,7 +38,7 @@ public class CategoryDTO {
 	}
 	
 	/**
-	 * 권한 일련 번호를 반환합니다.
+	 * .
 	 * @return
 	 */
 	public void setCategoryName(String categoryName) {
@@ -46,7 +46,7 @@ public class CategoryDTO {
 	}
 	
 	/**
-	 * 권한 일련 번호를 반환합니다.
+	 * .
 	 * @return
 	 */
 	public String getCategoryCodeRef() {
@@ -54,7 +54,7 @@ public class CategoryDTO {
 	}
 	
 	/**
-	 * 권한 일련 번호를 반환합니다.
+	 * .
 	 * @return
 	 */
 	public void setCategoryCodeRef(String categoryCodeRef) {
@@ -62,7 +62,7 @@ public class CategoryDTO {
 	}
 	
 	/**
-	 * 권한 일련 번호를 반환합니다.
+	 * .
 	 * @return
 	 */
 	public Integer getCategoryDepth() {
@@ -70,7 +70,7 @@ public class CategoryDTO {
 	}
 	
 	/**
-	 * 권한 일련 번호를 반환합니다.
+	 * .
 	 * @return
 	 */
 	public void setCategoryDepth(Integer categoryDepth) {
@@ -78,7 +78,7 @@ public class CategoryDTO {
 	}
 	
 	/**
-	 * 권한 일련 번호를 반환합니다.
+	 * .
 	 * @return
 	 */
 	public Integer getCategoryCodeRefCount() {
@@ -86,7 +86,7 @@ public class CategoryDTO {
 	}
 	
 	/**
-	 * 권한 일련 번호를 반환합니다.
+	 * .
 	 * @return
 	 */
 	public void setCategoryCodeRefCount(Integer categoryCodeRefCount) {
@@ -94,7 +94,7 @@ public class CategoryDTO {
 	}
 	
 	/**
-	 * 권한 일련 번호를 반환합니다.
+	 * .
 	 * @return
 	 */
 	@Override

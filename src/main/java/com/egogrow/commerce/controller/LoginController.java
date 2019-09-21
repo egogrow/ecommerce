@@ -8,27 +8,28 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("login/*") 
 public class LoginController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(MainController.class);
+	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
 
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	@RequestMapping(value = "/login")
 	public String loginPage() throws Exception {
-		System.out.println("Login Form");
+		logger.debug("login");
 		
 		return "login/login";
 	}
 	
 	@RequestMapping(value = "/accessDenied", method = RequestMethod.GET)
 	public String accessDeniedPage() throws Exception {
-		System.out.println("Access Denied");
+		logger.debug("accessDenied");
 		
 		return "login/accessDenied";
 	}
 	
     @RequestMapping(value="/accessDeniedAlert")
-    public ModelAndView accessDenied() throws Exception {
+    public ModelAndView accessDeniedAlert() throws Exception {
+    	logger.debug("accessDeniedAlert");
+    	
     	ModelAndView mv = new ModelAndView("login/accessDeniedAlert");
     	mv.addObject("msg", "접근 권한이 없습니다.");
     	mv.addObject("url", "/");

@@ -1,67 +1,110 @@
 package com.egogrow.commerce.dto;
 
-import java.util.ArrayList;
-import java.util.Collection;
+import java.io.Serializable;
+import java.util.List;
 
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
+import com.egogrow.commerce.enums.RoleTypeEnum;
+import com.egogrow.commerce.enums.StateEnum;
 
-@SuppressWarnings("serial")
-public class MemberDTO implements UserDetails {
+public class MemberDTO implements Serializable{
+
+	private static final long serialVersionUID = 1L;
 	
-	private String userId;
-	private String userPassword;
-	private String userAuthority;
-	private Boolean userEnabled;
-	private String userName;
+	private int memberId;
 	
-	// 계정이 갖고 있는 권한 목록 리턴
-	@Override
-	public Collection<? extends GrantedAuthority> getAuthorities() {
-		ArrayList<GrantedAuthority> auth = new ArrayList<>();
-		auth.add(new SimpleGrantedAuthority(userAuthority));
-		
-		return auth;
-	}
-
-	@Override
-	public String getPassword() {
-		return userPassword;
-	}
-
-	@Override
-	public String getUsername() {
-		return userId;
-	}
-
-	@Override
-	public boolean isAccountNonExpired() {
-		return true;
-	}
-
-	@Override
-	public boolean isAccountNonLocked() {
-		return true;
-	}
-
-	@Override
-	public boolean isCredentialsNonExpired() {
-		return true;
-	}
+	private String memberSsoId;
 	
-	// 계정 활성/비활성
+	private String memberPassword;
+	
+	private String memberName;
+	
+	private String memberEmail;
+	
+	private StateEnum memberState;
+	
+	private List<MemberDTO> roleList;
+	
+	private int roleId;
+	
+	private RoleTypeEnum roleType;
+
+	public int getMemberId() {
+		return memberId;
+	}
+
+	public void setMemberId(int memberId) {
+		this.memberId = memberId;
+	}
+
+	public String getMemberSsoId() {
+		return memberSsoId;
+	}
+
+	public void setMemberSsoId(String memberSsoId) {
+		this.memberSsoId = memberSsoId;
+	}
+
+	public String getMemberPassword() {
+		return memberPassword;
+	}
+
+	public void setMemberPassword(String memberPassword) {
+		this.memberPassword = memberPassword;
+	}
+
+	public String getMemberName() {
+		return memberName;
+	}
+
+	public void setMemberName(String memberName) {
+		this.memberName = memberName;
+	}
+
+	public String getMemberEmail() {
+		return memberEmail;
+	}
+
+	public void setMemberEmail(String memberEmail) {
+		this.memberEmail = memberEmail;
+	}
+
+	public StateEnum getMemberState() {
+		return memberState;
+	}
+
+	public void setMemberState(StateEnum memberState) {
+		this.memberState = memberState;
+	}
+
+	public List<MemberDTO> getRoleList() {
+		return roleList;
+	}
+
+	public void setRoleList(List<MemberDTO> roleList) {
+		this.roleList = roleList;
+	}
+
+	public int getRoleId() {
+		return roleId;
+	}
+
+	public void setRoleId(int roleId) {
+		this.roleId = roleId;
+	}
+
+	public RoleTypeEnum getRoleType() {
+		return roleType;
+	}
+
+	public void setRoleType(RoleTypeEnum roleType) {
+		this.roleType = roleType;
+	}
+
 	@Override
-	public boolean isEnabled() {
-		return userEnabled;
-	}
-
-	public String getNAME() {
-		return userName;
-	}
-
-	public void setNAME(String name) {
-		userName = name;
+	public String toString() {
+		return "MemberDTO [memberId=" + memberId + ", memberSsoId=" + memberSsoId + ", memberPassword=" + memberPassword
+				+ ", memberName=" + memberName + ", memberEmail=" + memberEmail + ", memberState=" + memberState
+				+ ", roleList=" + roleList + ", roleId=" + roleId + ", roleType=" + roleType + "]";
 	}
 	
 }

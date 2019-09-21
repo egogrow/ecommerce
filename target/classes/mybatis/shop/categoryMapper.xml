@@ -3,8 +3,9 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
 
-<mapper namespace="category">
-	<select id="listAll" resultType="categoryDTO">
+<mapper namespace="com.egogrow.commerce.dao.CategoryDAO">
+
+	<select id="getCategoryList" resultType="categoryDTO">
 		<![CDATA[
 		SELECT 
 			CATEGORY_CODE, CATEGORY_NAME, CATEGORY_CODE_REF, CATEGORY_DEPTH 
@@ -14,4 +15,5 @@
 			CATEGORY_YN = 'Y' ORDER BY CATEGORY_CODE+0
 		]]>		
 	</select>
+	
 </mapper>

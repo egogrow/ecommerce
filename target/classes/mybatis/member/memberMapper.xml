@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.egogrow.commerce.dao.MemberDAO">
+
+	<select id="getMemberById" resultType="memberDTO">
+		<![CDATA[
+		SELECT MEMBER.MEMBER_ID, MEMBER.MEMBER_SSO_ID, MEMBER.MEMBER_PASSWORD, MEMBER.MEMBER_NAME, MEMBER.MEMBER_EMAIL, MEMBER.MEMBER_STATE, ROLE.ROLE_ID, ROLE.ROLE_TYPE 
+		FROM MEMBER INNER JOIN MEMBER_ROLE_CROSS ON MEMBER.MEMBER_ID = MEMBER_ROLE_CROSS.MEMBER_ID
+		INNER JOIN ROLE ON ROLE.ROLE_ID = MEMBER_ROLE_CROSS.ROLE_ID WHERE MEMBER_SSO_ID = #{ssoId}
+		]]>	
+	</select>
+	
+</mapper>
+
+

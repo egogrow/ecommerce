@@ -1,4 +1,4 @@
-package com.egogrow.commerce.common;
+package com.egogrow.commerce.util;
 
 import java.util.ArrayList;
 import java.util.Arrays;

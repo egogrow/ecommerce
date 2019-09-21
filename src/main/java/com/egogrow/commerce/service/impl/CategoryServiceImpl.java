@@ -1,4 +1,4 @@
-package com.egogrow.commerce.service;
+package com.egogrow.commerce.service.impl;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,8 +11,9 @@ import org.springframework.stereotype.Service;
 
 import com.egogrow.commerce.dao.CategoryDAO;
 import com.egogrow.commerce.dto.CategoryDTO;
+import com.egogrow.commerce.service.CategoryService;
 
-@Service
+@Service("categoryService")
 public class CategoryServiceImpl implements CategoryService {
 	
 	@Inject
@@ -21,7 +22,7 @@ public class CategoryServiceImpl implements CategoryService {
 	@Override
 	public Map<String,List<CategoryDTO>> categoryList() throws Exception {
 
-		List<CategoryDTO> list = categoryDAO.categoryList();
+		List<CategoryDTO> list = categoryDAO.getCategoryList();
 		List<CategoryDTO> categoryList = new ArrayList<>();
 		List<CategoryDTO> divisionList = new ArrayList<>();
 		List<CategoryDTO> sectionList = new ArrayList<>();		

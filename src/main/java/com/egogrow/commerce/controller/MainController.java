@@ -7,6 +7,7 @@ import javax.inject.Inject;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,6 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.egogrow.commerce.dto.CategoryDTO;
 import com.egogrow.commerce.service.CategoryService;
+import com.egogrow.commerce.user.MemberInfo;
 
 /**
  * @project commerce
@@ -41,16 +43,17 @@ public class MainController {
 	 * @date 2019. 9. 10.
 	 * @author 이지훈
 	 */
-	@RequestMapping(value = "/", method = RequestMethod.GET)	
-	public ModelAndView mainPage() throws Exception {
-//		MemberDTO user = (MemberDTO) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-//		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+	@RequestMapping(value={"/main","/"}, method = RequestMethod.GET)	
+	public ModelAndView mainPage(Authentication auth) throws Exception {
+		logger.debug("main");
 		
-		
-		System.out.println("main");
-		ModelAndView mv = new ModelAndView("main/index");
+		ModelAndView mv = new ModelAndView("main/main");
 		Map<String,List<CategoryDTO>> categoryList = categoryService.categoryList();
 		mv.addObject("categoryList",categoryList);
+		if (auth != null) {
+			MemberInfo member = (MemberInfo) auth.getPrincipal();
+			mv.addObject("user", member.getName());			
+		}
 		
 		return mv;
 	}
