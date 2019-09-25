@@ -1,78 +1,14 @@
 # Product Name
-> Short blurb about what your product does.
+> 프로트엔드 몰 시스템 및 백엔드 관리 시스템을 포함한 ecommerce 쇼핑몰
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+# 프로젝트 소개
+> 전자 상거래 시스템입니다. 프론트 엔드 몰 시스템에는 홈 포털, 제품 추천, 제품 검색, 제품 디스플레이,
+> 쇼핑 카트, 주문 프로세스, 회원 센터, 고객 서비스, 도움말 센터, 기타 모듈이 포함됩니다.
+> 백그라운드 시스템은 상품 관리, 주문 관리, 회원 관리, 프로모션 관리, 운영 관리, 컨텐츠 관리, 권한 관리 및
+> 설정과 같은 모듈을 포함합니다.
 
-One to two paragraph statement about your product and what it does.
-
-![](header.png)
-
-## Installation
-
-OS X & Linux:
-
-```sh
-npm install my-crazy-module --save
-```
-
-Windows:
-
-```sh
-edit autoexec.bat
-```
-
-## Usage example
-
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
-
-_For more examples and usage, please refer to the [Wiki][wiki]._
-
-## Development setup
-
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
-
-```sh
-make install
-npm test
-```
-
-## Release History
-
-* 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
-    * CHANGE: Remove `setDefaultXYZ()`
-    * ADD: Add `init()`
-* 0.1.1
-    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
-* 0.1.0
-    * The first proper release
-    * CHANGE: Rename `foo()` to `bar()`
-* 0.0.1
-    * Work in progress
-
-## Meta
-
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
-
-Distributed under the XYZ license. See ``LICENSE`` for more information.
-
-[https://github.com/yourname/github-link](https://github.com/dbader/)
-
-## Contributing
-
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
-
-<!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/yourname/yourproject/wiki
+# 기술 선택
+## 프론트 엔드 기술
+maven, tiles, xssEscapeServletFilter, bootstrap4, json, ajax, javascript, css
+## 백엔드 기술
+spring MVC, Spring security, mariaDB, MyBatis, MapperScannerConfigurer, Jasypt, Message Queue 
